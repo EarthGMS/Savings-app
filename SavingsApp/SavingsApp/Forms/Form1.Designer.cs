@@ -37,6 +37,7 @@
             this.MonthlyText = new System.Windows.Forms.Label();
             this.AccountPanel = new System.Windows.Forms.Panel();
             this.AccountText = new System.Windows.Forms.Label();
+            this.MoneyLabel = new System.Windows.Forms.Label();
             this.MonthlyPanel.SuspendLayout();
             this.AccountPanel.SuspendLayout();
             this.SuspendLayout();
@@ -115,6 +116,7 @@
             // 
             // AccountPanel
             // 
+            this.AccountPanel.Controls.Add(this.MoneyLabel);
             this.AccountPanel.Controls.Add(this.AccountText);
             this.AccountPanel.Location = new System.Drawing.Point(291, 12);
             this.AccountPanel.Name = "AccountPanel";
@@ -131,13 +133,23 @@
             this.AccountText.TabIndex = 0;
             this.AccountText.Text = "ข้อมูลบัญชี";
             // 
+            // MoneyLabel
+            // 
+            this.MoneyLabel.AutoSize = true;
+            this.MoneyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.MoneyLabel.Location = new System.Drawing.Point(17, 70);
+            this.MoneyLabel.Name = "MoneyLabel";
+            this.MoneyLabel.Size = new System.Drawing.Size(123, 24);
+            this.MoneyLabel.TabIndex = 1;
+            this.MoneyLabel.Text = "[money label]";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.MonthlyPanel);
             this.Controls.Add(this.AccountPanel);
+            this.Controls.Add(this.MonthlyPanel);
             this.Controls.Add(this.AnalysisTab);
             this.Controls.Add(this.SpendingTab);
             this.Controls.Add(this.PocketMenuTab);
@@ -164,6 +176,7 @@
         private System.Windows.Forms.Label MonthlyText;
         private System.Windows.Forms.Panel AccountPanel;
         private System.Windows.Forms.Label AccountText;
+        private System.Windows.Forms.Label MoneyLabel;
     }
 }
 

@@ -22,8 +22,8 @@ namespace SavingsApp
 
         private void AcceptForm_Click(object sender, EventArgs e)
         {
-            Hide();
             account.CalculateTransaction(int.Parse(TransactionValue.Text));
+            Hide();
         }
     }
 }

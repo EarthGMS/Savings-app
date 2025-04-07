@@ -13,9 +13,6 @@ namespace SavingsApp
 {
     public partial class Form1: Form
     {
-        //Import codes
-        UI_Setup UI = new UI_Setup();
-
         public Form1()
         {
             InitializeComponent();
@@ -23,6 +20,7 @@ namespace SavingsApp
             panels.Add(AccountPanel);
             panels.Add(MonthlyPanel);
             CurrentTimeText.Text = DateTime.Now.ToString("MM-yyyy");
+           
         }
 
         private void SpendingTab_Click(object sender, EventArgs e)
@@ -35,6 +33,7 @@ namespace SavingsApp
         {
             AccountPanel.Visible = true;
             MonthlyPanel.Visible = false;
+            MoneyLabel.Text = Account_Data.MoneyVolume.ToString();
         }
 
         private void AnalysisTab_Click(object sender, EventArgs e)
