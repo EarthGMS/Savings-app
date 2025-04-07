@@ -38,6 +38,17 @@
             AcceptForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
+            // AcceptForm
+            // 
+            AcceptForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            AcceptForm.Location = new System.Drawing.Point(94, 209);
+            AcceptForm.Name = "AcceptForm";
+            AcceptForm.Size = new System.Drawing.Size(156, 33);
+            AcceptForm.TabIndex = 6;
+            AcceptForm.Text = "ตกลง";
+            AcceptForm.UseVisualStyleBackColor = true;
+            AcceptForm.Click += new System.EventHandler(this.AcceptForm_Click);
+            // 
             // TransactionValue
             // 
             this.TransactionValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
@@ -93,17 +104,6 @@
             this.label4.Size = new System.Drawing.Size(26, 20);
             this.label4.TabIndex = 5;
             this.label4.Text = "ชื่อ";
-            // 
-            // AcceptForm
-            // 
-            AcceptForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            AcceptForm.Location = new System.Drawing.Point(94, 209);
-            AcceptForm.Name = "AcceptForm";
-            AcceptForm.Size = new System.Drawing.Size(156, 33);
-            AcceptForm.TabIndex = 6;
-            AcceptForm.Text = "ตกลง";
-            AcceptForm.UseVisualStyleBackColor = true;
-            AcceptForm.Click += new System.EventHandler(this.AcceptForm_Click);
             // 
             // TransactionForm
             // 
