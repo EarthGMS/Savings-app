@@ -60,6 +60,7 @@
             this.PocketMenuTab.TabIndex = 1;
             this.PocketMenuTab.Text = "บัญชี";
             this.PocketMenuTab.UseVisualStyleBackColor = true;
+            this.PocketMenuTab.Click += new System.EventHandler(this.PocketMenuTab_Click);
             // 
             // SpendingTab
             // 
@@ -81,6 +82,7 @@
             this.AnalysisTab.TabIndex = 3;
             this.AnalysisTab.Text = "การเงินรายเดือน";
             this.AnalysisTab.UseVisualStyleBackColor = true;
+            this.AnalysisTab.Click += new System.EventHandler(this.AnalysisTab_Click);
             // 
             // MonthlyPanel
             // 

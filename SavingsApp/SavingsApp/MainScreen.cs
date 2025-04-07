@@ -12,15 +12,30 @@ namespace SavingsApp
 {
     public partial class Form1: Form
     {
-        TransactionForm transaction = new TransactionForm();
         public Form1()
         {
             InitializeComponent();
+            List<Panel> panels = new List<Panel>();
+            panels.Add(AccountPanel);
+            panels.Add(MonthlyPanel);
         }
 
         private void SpendingTab_Click(object sender, EventArgs e)
         {
+            TransactionForm transaction = new TransactionForm();
             transaction.Show();
+        }
+
+        private void PocketMenuTab_Click(object sender, EventArgs e)
+        {
+            AccountPanel.Visible = true;
+            MonthlyPanel.Visible = false;
+        }
+
+        private void AnalysisTab_Click(object sender, EventArgs e)
+        {
+            MonthlyPanel.Visible = true;
+            AccountPanel.Visible = false;
         }
     }
 }

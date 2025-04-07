@@ -16,5 +16,10 @@ namespace SavingsApp
         {
             InitializeComponent();
         }
+
+        private void AcceptForm_Click(object sender, EventArgs e)
+        {
+            Hide();
+        }
     }
 }

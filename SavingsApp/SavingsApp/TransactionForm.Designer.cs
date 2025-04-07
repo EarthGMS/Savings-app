@@ -28,19 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.Button AcceptForm;
             this.TransactionValue = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            AcceptForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TransactionValue
             // 
+            this.TransactionValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.TransactionValue.Location = new System.Drawing.Point(112, 147);
             this.TransactionValue.Name = "TransactionValue";
-            this.TransactionValue.Size = new System.Drawing.Size(171, 20);
+            this.TransactionValue.Size = new System.Drawing.Size(171, 26);
             this.TransactionValue.TabIndex = 0;
             // 
             // label1
@@ -56,42 +59,58 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 150);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label2.Location = new System.Drawing.Point(21, 150);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 13);
+            this.label2.Size = new System.Drawing.Size(76, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "ปริมาณเงิน";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(289, 150);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label3.Location = new System.Drawing.Point(301, 150);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 13);
+            this.label3.Size = new System.Drawing.Size(35, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "บาท";
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.textBox1.Location = new System.Drawing.Point(112, 110);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(171, 20);
+            this.textBox1.Size = new System.Drawing.Size(171, 26);
             this.textBox1.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(34, 113);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label4.Location = new System.Drawing.Point(21, 113);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(20, 13);
+            this.label4.Size = new System.Drawing.Size(26, 20);
             this.label4.TabIndex = 5;
             this.label4.Text = "ชื่อ";
+            // 
+            // AcceptForm
+            // 
+            AcceptForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            AcceptForm.Location = new System.Drawing.Point(94, 209);
+            AcceptForm.Name = "AcceptForm";
+            AcceptForm.Size = new System.Drawing.Size(156, 33);
+            AcceptForm.TabIndex = 6;
+            AcceptForm.Text = "ตกลง";
+            AcceptForm.UseVisualStyleBackColor = true;
+            AcceptForm.Click += new System.EventHandler(this.AcceptForm_Click);
             // 
             // TransactionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 474);
+            this.ClientSize = new System.Drawing.Size(368, 291);
+            this.Controls.Add(AcceptForm);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
