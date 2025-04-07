@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Codes\UI_Setup.cs" />
     <Compile Include="Forms\MainScreen.cs">
       <SubType>Form</SubType>
     </Compile>

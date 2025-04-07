@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SavingsApp.Codes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,12 +13,16 @@ namespace SavingsApp
 {
     public partial class Form1: Form
     {
+        //Import codes
+        UI_Setup UI = new UI_Setup();
+
         public Form1()
         {
             InitializeComponent();
             List<Panel> panels = new List<Panel>();
             panels.Add(AccountPanel);
             panels.Add(MonthlyPanel);
+            CurrentTimeText.Text = DateTime.Now.ToString("MM-yyyy");
         }
 
         private void SpendingTab_Click(object sender, EventArgs e)
@@ -36,6 +41,7 @@ namespace SavingsApp
         {
             MonthlyPanel.Visible = true;
             AccountPanel.Visible = false;
+
         }
     }
 }
