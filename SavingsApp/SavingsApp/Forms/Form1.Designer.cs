@@ -38,7 +38,6 @@
             this.AccountPanel = new System.Windows.Forms.Panel();
             this.MoneyLabel = new System.Windows.Forms.Label();
             this.AccountText = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.MonthlyPanel.SuspendLayout();
             this.AccountPanel.SuspendLayout();
             this.SuspendLayout();
@@ -47,20 +46,18 @@
             // 
             this.AppNameDisplay.AutoSize = true;
             this.AppNameDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.AppNameDisplay.Location = new System.Drawing.Point(16, 11);
-            this.AppNameDisplay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.AppNameDisplay.Location = new System.Drawing.Point(12, 9);
             this.AppNameDisplay.Name = "AppNameDisplay";
-            this.AppNameDisplay.Size = new System.Drawing.Size(344, 52);
+            this.AppNameDisplay.Size = new System.Drawing.Size(273, 39);
             this.AppNameDisplay.TabIndex = 0;
             this.AppNameDisplay.Text = "SAVERS NOTE";
             // 
             // PocketMenuTab
             // 
             this.PocketMenuTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.PocketMenuTab.Location = new System.Drawing.Point(53, 101);
-            this.PocketMenuTab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PocketMenuTab.Location = new System.Drawing.Point(40, 82);
             this.PocketMenuTab.Name = "PocketMenuTab";
-            this.PocketMenuTab.Size = new System.Drawing.Size(233, 34);
+            this.PocketMenuTab.Size = new System.Drawing.Size(175, 28);
             this.PocketMenuTab.TabIndex = 1;
             this.PocketMenuTab.Text = "บัญชี";
             this.PocketMenuTab.UseVisualStyleBackColor = true;
@@ -69,10 +66,9 @@
             // SpendingTab
             // 
             this.SpendingTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.SpendingTab.Location = new System.Drawing.Point(53, 160);
-            this.SpendingTab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SpendingTab.Location = new System.Drawing.Point(40, 130);
             this.SpendingTab.Name = "SpendingTab";
-            this.SpendingTab.Size = new System.Drawing.Size(233, 34);
+            this.SpendingTab.Size = new System.Drawing.Size(175, 28);
             this.SpendingTab.TabIndex = 2;
             this.SpendingTab.Text = "รายรับ-รายจ่าย";
             this.SpendingTab.UseVisualStyleBackColor = true;
@@ -81,10 +77,9 @@
             // AnalysisTab
             // 
             this.AnalysisTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.AnalysisTab.Location = new System.Drawing.Point(53, 220);
-            this.AnalysisTab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AnalysisTab.Location = new System.Drawing.Point(40, 179);
             this.AnalysisTab.Name = "AnalysisTab";
-            this.AnalysisTab.Size = new System.Drawing.Size(233, 34);
+            this.AnalysisTab.Size = new System.Drawing.Size(175, 28);
             this.AnalysisTab.TabIndex = 3;
             this.AnalysisTab.Text = "การเงินรายเดือน";
             this.AnalysisTab.UseVisualStyleBackColor = true;
@@ -94,20 +89,18 @@
             // 
             this.MonthlyPanel.Controls.Add(this.CurrentTimeText);
             this.MonthlyPanel.Controls.Add(this.MonthlyText);
-            this.MonthlyPanel.Location = new System.Drawing.Point(388, 15);
-            this.MonthlyPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MonthlyPanel.Location = new System.Drawing.Point(291, 12);
             this.MonthlyPanel.Name = "MonthlyPanel";
-            this.MonthlyPanel.Size = new System.Drawing.Size(663, 524);
+            this.MonthlyPanel.Size = new System.Drawing.Size(497, 426);
             this.MonthlyPanel.TabIndex = 11;
             // 
             // CurrentTimeText
             // 
             this.CurrentTimeText.AutoSize = true;
             this.CurrentTimeText.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.CurrentTimeText.Location = new System.Drawing.Point(17, 86);
-            this.CurrentTimeText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.CurrentTimeText.Location = new System.Drawing.Point(13, 70);
             this.CurrentTimeText.Name = "CurrentTimeText";
-            this.CurrentTimeText.Size = new System.Drawing.Size(219, 46);
+            this.CurrentTimeText.Size = new System.Drawing.Size(176, 37);
             this.CurrentTimeText.TabIndex = 1;
             this.CurrentTimeText.Text = "[Time Text]";
             // 
@@ -115,10 +108,9 @@
             // 
             this.MonthlyText.AutoSize = true;
             this.MonthlyText.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.MonthlyText.Location = new System.Drawing.Point(17, 16);
-            this.MonthlyText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.MonthlyText.Location = new System.Drawing.Point(13, 13);
             this.MonthlyText.Name = "MonthlyText";
-            this.MonthlyText.Size = new System.Drawing.Size(266, 46);
+            this.MonthlyText.Size = new System.Drawing.Size(214, 37);
             this.MonthlyText.TabIndex = 0;
             this.MonthlyText.Text = "การเงินรายเดือน";
             // 
@@ -126,20 +118,18 @@
             // 
             this.AccountPanel.Controls.Add(this.MoneyLabel);
             this.AccountPanel.Controls.Add(this.AccountText);
-            this.AccountPanel.Location = new System.Drawing.Point(388, 15);
-            this.AccountPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AccountPanel.Location = new System.Drawing.Point(291, 12);
             this.AccountPanel.Name = "AccountPanel";
-            this.AccountPanel.Size = new System.Drawing.Size(663, 524);
+            this.AccountPanel.Size = new System.Drawing.Size(497, 426);
             this.AccountPanel.TabIndex = 10;
             // 
             // MoneyLabel
             // 
             this.MoneyLabel.AutoSize = true;
             this.MoneyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.MoneyLabel.Location = new System.Drawing.Point(23, 86);
-            this.MoneyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.MoneyLabel.Location = new System.Drawing.Point(17, 70);
             this.MoneyLabel.Name = "MoneyLabel";
-            this.MoneyLabel.Size = new System.Drawing.Size(158, 29);
+            this.MoneyLabel.Size = new System.Drawing.Size(123, 24);
             this.MoneyLabel.TabIndex = 1;
             this.MoneyLabel.Text = "[money label]";
             // 
@@ -147,35 +137,23 @@
             // 
             this.AccountText.AutoSize = true;
             this.AccountText.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.AccountText.Location = new System.Drawing.Point(17, 16);
-            this.AccountText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.AccountText.Location = new System.Drawing.Point(13, 13);
             this.AccountText.Name = "AccountText";
-            this.AccountText.Size = new System.Drawing.Size(179, 46);
+            this.AccountText.Size = new System.Drawing.Size(144, 37);
             this.AccountText.TabIndex = 0;
             this.AccountText.Text = "ข้อมูลบัญชี";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(73, 272);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(197, 49);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.AccountPanel);
             this.Controls.Add(this.MonthlyPanel);
             this.Controls.Add(this.AnalysisTab);
             this.Controls.Add(this.SpendingTab);
             this.Controls.Add(this.PocketMenuTab);
             this.Controls.Add(this.AppNameDisplay);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.MonthlyPanel.ResumeLayout(false);
@@ -199,7 +177,6 @@
         private System.Windows.Forms.Panel AccountPanel;
         private System.Windows.Forms.Label AccountText;
         private System.Windows.Forms.Label MoneyLabel;
-        private System.Windows.Forms.Button button1;
     }
 }
 
