@@ -36,8 +36,11 @@
             this.CurrentTimeText = new System.Windows.Forms.Label();
             this.MonthlyText = new System.Windows.Forms.Label();
             this.AccountPanel = new System.Windows.Forms.Panel();
-            this.AccountText = new System.Windows.Forms.Label();
             this.MoneyLabel = new System.Windows.Forms.Label();
+            this.AccountText = new System.Windows.Forms.Label();
+            this.IncomeTextDisplay = new System.Windows.Forms.Label();
+            this.ExpenseTextDisplay = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.MonthlyPanel.SuspendLayout();
             this.AccountPanel.SuspendLayout();
             this.SuspendLayout();
@@ -87,6 +90,8 @@
             // 
             // MonthlyPanel
             // 
+            this.MonthlyPanel.Controls.Add(this.IncomeTextDisplay);
+            this.MonthlyPanel.Controls.Add(this.ExpenseTextDisplay);
             this.MonthlyPanel.Controls.Add(this.CurrentTimeText);
             this.MonthlyPanel.Controls.Add(this.MonthlyText);
             this.MonthlyPanel.Location = new System.Drawing.Point(291, 12);
@@ -123,6 +128,16 @@
             this.AccountPanel.Size = new System.Drawing.Size(497, 426);
             this.AccountPanel.TabIndex = 10;
             // 
+            // MoneyLabel
+            // 
+            this.MoneyLabel.AutoSize = true;
+            this.MoneyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.MoneyLabel.Location = new System.Drawing.Point(16, 107);
+            this.MoneyLabel.Name = "MoneyLabel";
+            this.MoneyLabel.Size = new System.Drawing.Size(123, 24);
+            this.MoneyLabel.TabIndex = 1;
+            this.MoneyLabel.Text = "[money label]";
+            // 
             // AccountText
             // 
             this.AccountText.AutoSize = true;
@@ -133,21 +148,43 @@
             this.AccountText.TabIndex = 0;
             this.AccountText.Text = "ข้อมูลบัญชี";
             // 
-            // MoneyLabel
+            // IncomeTextDisplay
             // 
-            this.MoneyLabel.AutoSize = true;
-            this.MoneyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.MoneyLabel.Location = new System.Drawing.Point(17, 70);
-            this.MoneyLabel.Name = "MoneyLabel";
-            this.MoneyLabel.Size = new System.Drawing.Size(123, 24);
-            this.MoneyLabel.TabIndex = 1;
-            this.MoneyLabel.Text = "[money label]";
+            this.IncomeTextDisplay.AutoSize = true;
+            this.IncomeTextDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.IncomeTextDisplay.Location = new System.Drawing.Point(16, 130);
+            this.IncomeTextDisplay.Name = "IncomeTextDisplay";
+            this.IncomeTextDisplay.Size = new System.Drawing.Size(118, 20);
+            this.IncomeTextDisplay.TabIndex = 2;
+            this.IncomeTextDisplay.Text = "รายรับ : [income]";
+            this.IncomeTextDisplay.Click += new System.EventHandler(this.IncomeTextDisplay_Click);
+            // 
+            // ExpenseTextDisplay
+            // 
+            this.ExpenseTextDisplay.AutoSize = true;
+            this.ExpenseTextDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.ExpenseTextDisplay.Location = new System.Drawing.Point(15, 161);
+            this.ExpenseTextDisplay.Name = "ExpenseTextDisplay";
+            this.ExpenseTextDisplay.Size = new System.Drawing.Size(142, 20);
+            this.ExpenseTextDisplay.TabIndex = 3;
+            this.ExpenseTextDisplay.Text = "รายจ่าย : [expenses]";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.button1.Location = new System.Drawing.Point(40, 223);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(175, 26);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "ภารกิจ";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.AccountPanel);
             this.Controls.Add(this.MonthlyPanel);
             this.Controls.Add(this.AnalysisTab);
@@ -177,6 +214,9 @@
         private System.Windows.Forms.Panel AccountPanel;
         private System.Windows.Forms.Label AccountText;
         private System.Windows.Forms.Label MoneyLabel;
+        private System.Windows.Forms.Label ExpenseTextDisplay;
+        private System.Windows.Forms.Label IncomeTextDisplay;
+        private System.Windows.Forms.Button button1;
     }
 }
 

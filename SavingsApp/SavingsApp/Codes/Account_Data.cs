@@ -10,11 +10,19 @@ namespace SavingsApp.Codes
     class Account_Data
     {
         public static long MoneyVolume;
-
+        public static long IncomeText;
+        public static long ExpenseText;
         public void CalculateTransaction(int moneyTransaction)
         {
             MoneyVolume += moneyTransaction;
-            MessageBox.Show(MoneyVolume.ToString());
+            if(moneyTransaction > 0)
+            {
+                IncomeText += moneyTransaction;
+            }
+            else
+            {
+                ExpenseText += moneyTransaction;
+            }
         }
     }
 }

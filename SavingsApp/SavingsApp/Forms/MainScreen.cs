@@ -40,6 +40,12 @@ namespace SavingsApp
         {
             MonthlyPanel.Visible = true;
             AccountPanel.Visible = false;
+            IncomeTextDisplay.Text = "รายได้ : " + Account_Data.IncomeText.ToString() + " บาท";
+            ExpenseTextDisplay.Text = "รายจ่าย : " + Math.Abs(Account_Data.ExpenseText).ToString() + " บาท";
+        }
+
+        private void IncomeTextDisplay_Click(object sender, EventArgs e)
+        {
 
         }
     }
