@@ -13,6 +13,7 @@ namespace SavingsApp
 {
     public partial class Form1: Form
     {
+        SaveInfo info;
         public Form1()
         {
             InitializeComponent();
@@ -20,8 +21,15 @@ namespace SavingsApp
             panels.Add(AccountPanel);
             panels.Add(MonthlyPanel);
             CurrentTimeText.Text = DateTime.Now.ToString("MM-yyyy");
+            info = new SaveInfo();
+            BootInfo();
             PocketSetup();
             AnalysisSetup();
+        }
+
+        public void BootInfo()
+        {
+            info.LoadData();
         }
 
         private void SpendingTab_Click(object sender, EventArgs e)
@@ -67,6 +75,11 @@ namespace SavingsApp
         {
             IncomeTextDisplay.Text = "รายได้ : " + Account_Data.IncomeText.ToString() + " บาท";
             ExpenseTextDisplay.Text = "รายจ่าย : " + Math.Abs(Account_Data.ExpenseText).ToString() + " บาท";
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            info.SaveData();
         }
     }
 }
