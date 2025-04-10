@@ -62,6 +62,7 @@
             this.TransactionValue.Name = "TransactionValue";
             this.TransactionValue.Size = new System.Drawing.Size(171, 26);
             this.TransactionValue.TabIndex = 0;
+            this.TransactionValue.Text = "0";
             // 
             // label1
             // 
@@ -155,6 +156,7 @@
             this.PercentageBox.Name = "PercentageBox";
             this.PercentageBox.Size = new System.Drawing.Size(171, 26);
             this.PercentageBox.TabIndex = 10;
+            this.PercentageBox.Text = "0";
             // 
             // label6
             // 
