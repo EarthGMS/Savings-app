@@ -9,3 +9,4 @@ D:\github repo\Savings-app\SavingsApp\SavingsApp\obj\Debug\SavingsApp.csproj.Gen
 D:\github repo\Savings-app\SavingsApp\SavingsApp\obj\Debug\SavingsApp.csproj.CoreCompileInputs.cache
 D:\github repo\Savings-app\SavingsApp\SavingsApp\obj\Debug\SavingsApp.exe
 D:\github repo\Savings-app\SavingsApp\SavingsApp\obj\Debug\SavingsApp.pdb
+D:\github repo\Savings-app\SavingsApp\SavingsApp\obj\Debug\SavingsApp.Forms.Mission.resources

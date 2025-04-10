@@ -20,7 +20,8 @@ namespace SavingsApp
             panels.Add(AccountPanel);
             panels.Add(MonthlyPanel);
             CurrentTimeText.Text = DateTime.Now.ToString("MM-yyyy");
-           
+            PocketSetup();
+            AnalysisSetup();
         }
 
         private void SpendingTab_Click(object sender, EventArgs e)
@@ -33,20 +34,39 @@ namespace SavingsApp
         {
             AccountPanel.Visible = true;
             MonthlyPanel.Visible = false;
-            MoneyLabel.Text = Account_Data.MoneyVolume.ToString();
+            PocketSetup();
         }
 
         private void AnalysisTab_Click(object sender, EventArgs e)
         {
             MonthlyPanel.Visible = true;
             AccountPanel.Visible = false;
-            IncomeTextDisplay.Text = "รายได้ : " + Account_Data.IncomeText.ToString() + " บาท";
-            ExpenseTextDisplay.Text = "รายจ่าย : " + Math.Abs(Account_Data.ExpenseText).ToString() + " บาท";
+            AnalysisSetup();
         }
 
         private void IncomeTextDisplay_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        void PocketSetup()
+        {
+            SavingsPocket.Text = "เงินเก็บ : " + Account_Data.SavingsVolume.ToString() + " บาท";
+            BillPocket.Text = "ค่าบิล : " + Account_Data.BillVolume.ToString() + " บาท";
+            MealsPocket.Text = "ค่ากิน : " + Account_Data.MealsVolume.ToString() + " บาท";
+            TravelPocket.Text = "ค่าเที่ยว : " + Account_Data.TravelVolume.ToString() + " บาท";
+            WantsPocket.Text = "เงินฟุ่มเฟือย : " + Account_Data.WantsVolume.ToString() + " บาท";
+        }
+
+        void AnalysisSetup()
+        {
+            IncomeTextDisplay.Text = "รายได้ : " + Account_Data.IncomeText.ToString() + " บาท";
+            ExpenseTextDisplay.Text = "รายจ่าย : " + Math.Abs(Account_Data.ExpenseText).ToString() + " บาท";
         }
     }
 }

@@ -17,12 +17,18 @@ namespace SavingsApp
         public TransactionForm()
         {
             InitializeComponent();
+            PocketList.SelectedIndex = 0;
             account = new Account_Data();
         }
 
         private void AcceptForm_Click(object sender, EventArgs e)
         {
-            account.CalculateTransaction(int.Parse(TransactionValue.Text));
+            if(TransactionValue.Text != null)
+            {
+                account.CalculateTransaction(int.Parse(TransactionValue.Text));
+                account.PocketTransaction(int.Parse(TransactionValue.Text), PocketList.SelectedIndex);
+                account.CalculatePercentage(int.Parse(PercentageBox.Text), int.Parse(TransactionValue.Text));
+            }
             Hide();
         }
     }

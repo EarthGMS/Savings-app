@@ -35,13 +35,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.PocketList = new System.Windows.Forms.ComboBox();
+            this.WhereToGo = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.PercentageBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             AcceptForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AcceptForm
             // 
             AcceptForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            AcceptForm.Location = new System.Drawing.Point(94, 209);
+            AcceptForm.Location = new System.Drawing.Point(99, 345);
             AcceptForm.Name = "AcceptForm";
             AcceptForm.Size = new System.Drawing.Size(156, 33);
             AcceptForm.TabIndex = 6;
@@ -52,7 +58,7 @@
             // TransactionValue
             // 
             this.TransactionValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.TransactionValue.Location = new System.Drawing.Point(112, 147);
+            this.TransactionValue.Location = new System.Drawing.Point(143, 147);
             this.TransactionValue.Name = "TransactionValue";
             this.TransactionValue.Size = new System.Drawing.Size(171, 26);
             this.TransactionValue.TabIndex = 0;
@@ -81,7 +87,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label3.Location = new System.Drawing.Point(301, 150);
+            this.label3.Location = new System.Drawing.Point(321, 150);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 20);
             this.label3.TabIndex = 3;
@@ -90,7 +96,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.textBox1.Location = new System.Drawing.Point(112, 110);
+            this.textBox1.Location = new System.Drawing.Point(144, 110);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(171, 26);
             this.textBox1.TabIndex = 4;
@@ -105,11 +111,82 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "ชื่อ";
             // 
+            // PocketList
+            // 
+            this.PocketList.DisplayMember = "0";
+            this.PocketList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.PocketList.FormattingEnabled = true;
+            this.PocketList.Items.AddRange(new object[] {
+            "เงินเก็บ",
+            "ค่าบิล",
+            "ค่ากิน",
+            "ค่าเที่ยว",
+            "เงินฟุ่มเฟือย"});
+            this.PocketList.Location = new System.Drawing.Point(143, 188);
+            this.PocketList.Name = "PocketList";
+            this.PocketList.Size = new System.Drawing.Size(171, 28);
+            this.PocketList.TabIndex = 7;
+            this.PocketList.ValueMember = "0";
+            // 
+            // WhereToGo
+            // 
+            this.WhereToGo.AutoSize = true;
+            this.WhereToGo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.WhereToGo.Location = new System.Drawing.Point(21, 191);
+            this.WhereToGo.Name = "WhereToGo";
+            this.WhereToGo.Size = new System.Drawing.Size(116, 20);
+            this.WhereToGo.TabIndex = 8;
+            this.WhereToGo.Text = "เก็บที่/จ่ายเงินจาก";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(46, 243);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(256, 37);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "เงินเก็บตามรายจ่าย";
+            // 
+            // PercentageBox
+            // 
+            this.PercentageBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.PercentageBox.Location = new System.Drawing.Point(143, 295);
+            this.PercentageBox.Name = "PercentageBox";
+            this.PercentageBox.Size = new System.Drawing.Size(171, 26);
+            this.PercentageBox.TabIndex = 10;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label6.Location = new System.Drawing.Point(21, 298);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(72, 20);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "เปอร์เซ็นต์";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label7.Location = new System.Drawing.Point(321, 298);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(23, 20);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "%";
+            // 
             // TransactionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 291);
+            this.ClientSize = new System.Drawing.Size(368, 406);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.PercentageBox);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.WhereToGo);
+            this.Controls.Add(this.PocketList);
             this.Controls.Add(AcceptForm);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox1);
@@ -132,5 +209,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox PocketList;
+        private System.Windows.Forms.Label WhereToGo;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox PercentageBox;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
