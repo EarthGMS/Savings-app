@@ -16,5 +16,11 @@ namespace SavingsApp.Forms
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //add a new mission
+
+        }
     }
 }

@@ -256,6 +256,7 @@
             this.button1.TabIndex = 12;
             this.button1.Text = "ภารกิจ";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -263,8 +264,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.MonthlyPanel);
             this.Controls.Add(this.AccountPanel);
+            this.Controls.Add(this.MonthlyPanel);
             this.Controls.Add(this.AnalysisTab);
             this.Controls.Add(this.SpendingTab);
             this.Controls.Add(this.PocketMenuTab);

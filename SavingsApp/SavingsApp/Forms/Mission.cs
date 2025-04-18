@@ -16,5 +16,16 @@ namespace SavingsApp.Forms
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addMissionButton_Click(object sender, EventArgs e)
+        {
+            addMission addMission = new addMission();
+            addMission.Show();
+        }
     }
 }

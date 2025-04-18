@@ -1,4 +1,5 @@
 ﻿using SavingsApp.Codes;
+using SavingsApp.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,13 +35,15 @@ namespace SavingsApp
 
         private void SpendingTab_Click(object sender, EventArgs e)
         {
-            TransactionForm transaction = new TransactionForm();
-            transaction.Show();
+            MonthlyPanel.Visible = false;
+            //TransactionPanel.Visible = true;
+            AccountPanel.Visible = false;
         }
 
         private void PocketMenuTab_Click(object sender, EventArgs e)
         {
             AccountPanel.Visible = true;
+            //TransactionPanel.Visible = false;
             MonthlyPanel.Visible = false;
             PocketSetup();
         }
@@ -48,6 +51,7 @@ namespace SavingsApp
         private void AnalysisTab_Click(object sender, EventArgs e)
         {
             MonthlyPanel.Visible = true;
+            //TransactionPanel.Visible = false;
             AccountPanel.Visible = false;
             AnalysisSetup();
         }
@@ -75,11 +79,19 @@ namespace SavingsApp
         {
             IncomeTextDisplay.Text = "รายได้ : " + Account_Data.IncomeText.ToString() + " บาท";
             ExpenseTextDisplay.Text = "รายจ่าย : " + Math.Abs(Account_Data.ExpenseText).ToString() + " บาท";
+            chart1.Series["Income"].Points.AddXY(DateTime.Now.ToString("MM-yyyy"), Account_Data.IncomeText);
+            chart1.Series["Expenses"].Points.AddXY(DateTime.Now.ToString("MM-yyyy"), Math.Abs(Account_Data.ExpenseText));
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             info.SaveData();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Mission missionWindow = new Mission();
+            missionWindow.Show();
         }
     }
 }
