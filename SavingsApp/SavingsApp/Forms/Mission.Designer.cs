@@ -30,11 +30,11 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.MissionData = new System.Windows.Forms.DataGridView();
-            this.addMissionButton = new System.Windows.Forms.Button();
             this.MissionName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MissionValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Day = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FinishMission = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.addMissionButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.MissionData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,16 +63,7 @@
             this.MissionData.RowHeadersVisible = false;
             this.MissionData.Size = new System.Drawing.Size(533, 292);
             this.MissionData.TabIndex = 1;
-            // 
-            // addMissionButton
-            // 
-            this.addMissionButton.Location = new System.Drawing.Point(70, 74);
-            this.addMissionButton.Name = "addMissionButton";
-            this.addMissionButton.Size = new System.Drawing.Size(93, 25);
-            this.addMissionButton.TabIndex = 2;
-            this.addMissionButton.Text = "เพิ่มภารกิจ";
-            this.addMissionButton.UseVisualStyleBackColor = true;
-            this.addMissionButton.Click += new System.EventHandler(this.addMissionButton_Click);
+            this.MissionData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.MissionData_CellContentClick);
             // 
             // MissionName
             // 
@@ -100,6 +91,16 @@
             this.FinishMission.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.FinishMission.Text = "เสร็จสิ้น";
             this.FinishMission.UseColumnTextForButtonValue = true;
+            // 
+            // addMissionButton
+            // 
+            this.addMissionButton.Location = new System.Drawing.Point(70, 74);
+            this.addMissionButton.Name = "addMissionButton";
+            this.addMissionButton.Size = new System.Drawing.Size(93, 25);
+            this.addMissionButton.TabIndex = 2;
+            this.addMissionButton.Text = "เพิ่มภารกิจ";
+            this.addMissionButton.UseVisualStyleBackColor = true;
+            this.addMissionButton.Click += new System.EventHandler(this.addMissionButton_Click);
             // 
             // Mission
             // 

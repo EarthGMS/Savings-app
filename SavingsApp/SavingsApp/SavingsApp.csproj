@@ -79,6 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Codes\Account_Data.cs" />
+    <Compile Include="Codes\MissionData.cs" />
     <Compile Include="Codes\SaveInfo.cs" />
     <Compile Include="Codes\TransactionData.cs" />
     <Compile Include="Codes\UI_Setup.cs" />

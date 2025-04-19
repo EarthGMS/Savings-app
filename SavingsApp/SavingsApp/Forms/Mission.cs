@@ -15,6 +15,10 @@ namespace SavingsApp.Forms
         public Mission()
         {
             InitializeComponent();
+            for (int i = 0; i <6 ; i++)
+            {
+                
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -26,6 +30,11 @@ namespace SavingsApp.Forms
         {
             addMission addMission = new addMission();
             addMission.Show();
+        }
+
+        private void MissionData_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

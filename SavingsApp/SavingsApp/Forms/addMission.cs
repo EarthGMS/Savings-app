@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SavingsApp.Codes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,7 +21,8 @@ namespace SavingsApp.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             //add a new mission
-
+            MissionData missionData = new MissionData();
+            missionData.SaveMissionData(nameTextBox.Text, long.Parse(priceTextBox.Text), long.Parse(timeTextBox.Text));
         }
     }
 }
