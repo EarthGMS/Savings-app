@@ -15,6 +15,8 @@ namespace SavingsApp
     public partial class Form1: Form
     {
         SaveInfo info;
+
+        TransactionData transactionData = new TransactionData();
         public Form1()
         {
             InitializeComponent();
@@ -92,6 +94,18 @@ namespace SavingsApp
         {
             Mission missionWindow = new Mission();
             missionWindow.Show();
+        }
+
+        private void addTransactionButton_Click(object sender, EventArgs e)
+        {
+            TransactionForm transactionForm = new TransactionForm();
+            transactionForm.Show();
+        }
+
+        //TRANSACTION DATA FUNCTION
+        void setupTransactionData()
+        {
+
         }
     }
 }

@@ -24,6 +24,8 @@ namespace SavingsApp
                 {
                     account.CalculatePercentage(int.Parse(PercentageBox.Text), int.Parse(TransactionValue.Text));
                 }
+                TransactionData transactionData = new TransactionData();
+                transactionData.SaveTransactionData(TransactionName.Text, int.Parse(TransactionValue.Text));
             }
             Hide();
         }
