@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SavingsApp.Codes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,9 +16,9 @@ namespace SavingsApp.Forms
         public Mission()
         {
             InitializeComponent();
-            for (int i = 0; i <6 ; i++)
+            for (int i = 0; i < MissionData.missionList.Count; i++)
             {
-                
+                MissionDataGridBox.Rows.Add(MissionData.missionList[i].missionName, MissionData.missionList[i].missionValue, MissionData.missionList[i].missionDay);
             }
         }
 

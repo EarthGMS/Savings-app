@@ -23,6 +23,7 @@ namespace SavingsApp.Forms
             //add a new mission
             MissionData missionData = new MissionData();
             missionData.SaveMissionData(nameTextBox.Text, long.Parse(priceTextBox.Text), long.Parse(timeTextBox.Text));
+            Hide();
         }
     }
 }

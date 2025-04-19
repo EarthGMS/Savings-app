@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.MissionData = new System.Windows.Forms.DataGridView();
+            this.MissionDataGridBox = new System.Windows.Forms.DataGridView();
             this.MissionName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MissionValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Day = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FinishMission = new System.Windows.Forms.DataGridViewButtonColumn();
             this.addMissionButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.MissionData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MissionDataGridBox)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -49,21 +49,21 @@
             this.label1.Text = "ภารกิจ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // MissionData
+            // MissionDataGridBox
             // 
-            this.MissionData.AllowUserToAddRows = false;
-            this.MissionData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.MissionData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MissionDataGridBox.AllowUserToAddRows = false;
+            this.MissionDataGridBox.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.MissionDataGridBox.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MissionName,
             this.MissionValue,
             this.Day,
             this.FinishMission});
-            this.MissionData.Location = new System.Drawing.Point(70, 105);
-            this.MissionData.Name = "MissionData";
-            this.MissionData.RowHeadersVisible = false;
-            this.MissionData.Size = new System.Drawing.Size(533, 292);
-            this.MissionData.TabIndex = 1;
-            this.MissionData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.MissionData_CellContentClick);
+            this.MissionDataGridBox.Location = new System.Drawing.Point(70, 105);
+            this.MissionDataGridBox.Name = "MissionDataGridBox";
+            this.MissionDataGridBox.RowHeadersVisible = false;
+            this.MissionDataGridBox.Size = new System.Drawing.Size(533, 292);
+            this.MissionDataGridBox.TabIndex = 1;
+            this.MissionDataGridBox.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.MissionData_CellContentClick);
             // 
             // MissionName
             // 
@@ -108,11 +108,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(673, 426);
             this.Controls.Add(this.addMissionButton);
-            this.Controls.Add(this.MissionData);
+            this.Controls.Add(this.MissionDataGridBox);
             this.Controls.Add(this.label1);
             this.Name = "Mission";
             this.Text = "Mission";
-            ((System.ComponentModel.ISupportInitialize)(this.MissionData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MissionDataGridBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,7 +121,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView MissionData;
+        private System.Windows.Forms.DataGridView MissionDataGridBox;
         private System.Windows.Forms.Button addMissionButton;
         private System.Windows.Forms.DataGridViewTextBoxColumn MissionName;
         private System.Windows.Forms.DataGridViewTextBoxColumn MissionValue;
