@@ -16,7 +16,6 @@ namespace SavingsApp
     {
         SaveInfo info;
 
-        TransactionData transactionData = new TransactionData();
         public Form1()
         {
             InitializeComponent();
@@ -28,6 +27,7 @@ namespace SavingsApp
             BootInfo();
             PocketSetup();
             AnalysisSetup();
+            setupTransactionData();
         }
 
         public void BootInfo()
@@ -40,6 +40,7 @@ namespace SavingsApp
             MonthlyPanel.Visible = false;
             transactionPanel.Visible = true;
             AccountPanel.Visible = false;
+            setupTransactionData();
         }
 
         private void PocketMenuTab_Click(object sender, EventArgs e)
@@ -105,7 +106,10 @@ namespace SavingsApp
         //TRANSACTION DATA FUNCTION
         void setupTransactionData()
         {
-
+            for (int i = 0; i < TransactionData.transactionList.Count(); i++)
+            {
+                transactionGridView.Rows.Add(TransactionData.transactionList[i].transactionName, TransactionData.transactionList[i].transactionValue, "");
+            }
         }
     }
 }

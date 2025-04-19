@@ -11,7 +11,7 @@ namespace SavingsApp.Codes
         public string transactionName { get; set; }
         public long transactionValue { get; set; }
 
-        List<TransactionData> transactionList = new List<TransactionData>();
+        public static List<TransactionData> transactionList = new List<TransactionData>();
 
         public void SaveTransactionData(string name, long value)
         {
