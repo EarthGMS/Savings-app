@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.AppNameDisplay = new System.Windows.Forms.Label();
             this.PocketMenuTab = new System.Windows.Forms.Button();
             this.SpendingTab = new System.Windows.Forms.Button();
@@ -52,10 +52,15 @@
             this.button1 = new System.Windows.Forms.Button();
             this.transactionPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.TransactionName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TransactionVolume = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TransactionType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MonthlyPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.AccountPanel.SuspendLayout();
             this.transactionPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // AppNameDisplay
@@ -115,22 +120,22 @@
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea4.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart1.Legends.Add(legend4);
             this.chart1.Location = new System.Drawing.Point(19, 220);
             this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            series3.Legend = "Legend1";
-            series3.Name = "Income";
-            series4.ChartArea = "ChartArea1";
-            series4.Color = System.Drawing.Color.Red;
-            series4.Legend = "Legend1";
-            series4.Name = "Expenses";
-            this.chart1.Series.Add(series3);
-            this.chart1.Series.Add(series4);
+            series7.ChartArea = "ChartArea1";
+            series7.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            series7.Legend = "Legend1";
+            series7.Name = "Income";
+            series8.ChartArea = "ChartArea1";
+            series8.Color = System.Drawing.Color.Red;
+            series8.Legend = "Legend1";
+            series8.Name = "Expenses";
+            this.chart1.Series.Add(series7);
+            this.chart1.Series.Add(series8);
             this.chart1.Size = new System.Drawing.Size(457, 192);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
@@ -263,6 +268,7 @@
             // 
             // transactionPanel
             // 
+            this.transactionPanel.Controls.Add(this.dataGridView1);
             this.transactionPanel.Controls.Add(this.label1);
             this.transactionPanel.Location = new System.Drawing.Point(291, 12);
             this.transactionPanel.Name = "transactionPanel";
@@ -278,6 +284,40 @@
             this.label1.Size = new System.Drawing.Size(228, 39);
             this.label1.TabIndex = 13;
             this.label1.Text = "รายรับ-รายจ่าย";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.TransactionName,
+            this.TransactionVolume,
+            this.TransactionType});
+            this.dataGridView1.Location = new System.Drawing.Point(20, 87);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.Size = new System.Drawing.Size(456, 325);
+            this.dataGridView1.TabIndex = 14;
+            // 
+            // TransactionName
+            // 
+            this.TransactionName.HeaderText = "ชื่อ";
+            this.TransactionName.Name = "TransactionName";
+            this.TransactionName.Width = 153;
+            // 
+            // TransactionVolume
+            // 
+            this.TransactionVolume.HeaderText = "ปริมาณ";
+            this.TransactionVolume.Name = "TransactionVolume";
+            this.TransactionVolume.Width = 150;
+            // 
+            // TransactionType
+            // 
+            this.TransactionType.HeaderText = "จ่าย/นำเงินเข้าที่";
+            this.TransactionType.Name = "TransactionType";
+            this.TransactionType.Width = 150;
             // 
             // Form1
             // 
@@ -302,6 +342,7 @@
             this.AccountPanel.PerformLayout();
             this.transactionPanel.ResumeLayout(false);
             this.transactionPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -329,6 +370,10 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Panel transactionPanel;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TransactionName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TransactionVolume;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TransactionType;
     }
 }
 
