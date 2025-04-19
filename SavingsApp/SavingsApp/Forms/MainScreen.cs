@@ -36,14 +36,14 @@ namespace SavingsApp
         private void SpendingTab_Click(object sender, EventArgs e)
         {
             MonthlyPanel.Visible = false;
-            //TransactionPanel.Visible = true;
+            transactionPanel.Visible = true;
             AccountPanel.Visible = false;
         }
 
         private void PocketMenuTab_Click(object sender, EventArgs e)
         {
             AccountPanel.Visible = true;
-            //TransactionPanel.Visible = false;
+            transactionPanel.Visible = false;
             MonthlyPanel.Visible = false;
             PocketSetup();
         }
@@ -51,7 +51,7 @@ namespace SavingsApp
         private void AnalysisTab_Click(object sender, EventArgs e)
         {
             MonthlyPanel.Visible = true;
-            //TransactionPanel.Visible = false;
+            transactionPanel.Visible = false;
             AccountPanel.Visible = false;
             AnalysisSetup();
         }
