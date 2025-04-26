@@ -28,6 +28,16 @@ namespace SavingsApp.Codes
             File.WriteAllText("AnalysisData.json", json);
         }
 
+        public void SaveTransactionData()
+        {
+
+        }
+
+        public void SaveMissionData()
+        {
+
+        }
+
         public void LoadData()
         {
             if (File.Exists("AnalysisData.json"))

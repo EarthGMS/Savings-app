@@ -35,6 +35,7 @@
             this.Day = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FinishMission = new System.Windows.Forms.DataGridViewButtonColumn();
             this.addMissionButton = new System.Windows.Forms.Button();
+            this.CurrentSaving = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MissionDataGridBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,11 +103,24 @@
             this.addMissionButton.UseVisualStyleBackColor = true;
             this.addMissionButton.Click += new System.EventHandler(this.addMissionButton_Click);
             // 
+            // CurrentSaving
+            // 
+            this.CurrentSaving.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CurrentSaving.AutoSize = true;
+            this.CurrentSaving.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.CurrentSaving.Location = new System.Drawing.Point(188, 71);
+            this.CurrentSaving.Name = "CurrentSaving";
+            this.CurrentSaving.Size = new System.Drawing.Size(209, 25);
+            this.CurrentSaving.TabIndex = 3;
+            this.CurrentSaving.Text = "จำนวนเงินในขณะนี้ : [?]";
+            this.CurrentSaving.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // Mission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(673, 426);
+            this.Controls.Add(this.CurrentSaving);
             this.Controls.Add(this.addMissionButton);
             this.Controls.Add(this.MissionDataGridBox);
             this.Controls.Add(this.label1);
@@ -127,5 +141,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MissionValue;
         private System.Windows.Forms.DataGridViewTextBoxColumn Day;
         private System.Windows.Forms.DataGridViewButtonColumn FinishMission;
+        private System.Windows.Forms.Label CurrentSaving;
     }
 }
