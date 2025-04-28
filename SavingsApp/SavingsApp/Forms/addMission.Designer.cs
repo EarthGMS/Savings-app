@@ -35,9 +35,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.priceTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.timeTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.TargetDate = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // button1
@@ -107,14 +106,6 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "เวลา";
             // 
-            // timeTextBox
-            // 
-            this.timeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.timeTextBox.Location = new System.Drawing.Point(87, 201);
-            this.timeTextBox.Name = "timeTextBox";
-            this.timeTextBox.Size = new System.Drawing.Size(177, 26);
-            this.timeTextBox.TabIndex = 7;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -125,24 +116,20 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "บาท";
             // 
-            // label6
+            // TargetDate
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label6.Location = new System.Drawing.Point(276, 203);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(31, 24);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "วัน";
+            this.TargetDate.Location = new System.Drawing.Point(87, 205);
+            this.TargetDate.Name = "TargetDate";
+            this.TargetDate.Size = new System.Drawing.Size(205, 20);
+            this.TargetDate.TabIndex = 9;
             // 
             // addMission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(341, 336);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.TargetDate);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.timeTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.priceTextBox);
             this.Controls.Add(this.label3);
@@ -166,8 +153,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox priceTextBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox timeTextBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DateTimePicker TargetDate;
     }
 }

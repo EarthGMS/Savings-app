@@ -15,10 +15,12 @@ namespace SavingsApp.Forms
     {
         public Mission()
         {
+            DateTime CurrentTime = DateTime.Now;
             InitializeComponent();
             for (int i = 0; i < MissionData.missionList.Count; i++)
             {
-                MissionDataGridBox.Rows.Add(MissionData.missionList[i].missionName, MissionData.missionList[i].missionValue, MissionData.missionList[i].missionDay);
+                TimeSpan duration = MissionData.missionList[i].missionDate - CurrentTime;
+                MissionDataGridBox.Rows.Add(MissionData.missionList[i].missionName, MissionData.missionList[i].missionValue, (int)duration.TotalDays);
             }
         }
 
@@ -35,7 +37,7 @@ namespace SavingsApp.Forms
 
         private void MissionData_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            MissionDataGridBox.Rows.RemoveAt(MissionDataGridBox.CurrentRow.Index);
         }
     }
 }

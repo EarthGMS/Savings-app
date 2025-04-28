@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.AppNameDisplay = new System.Windows.Forms.Label();
             this.PocketMenuTab = new System.Windows.Forms.Button();
             this.SpendingTab = new System.Windows.Forms.Button();
@@ -68,7 +68,7 @@
             // 
             this.AppNameDisplay.AutoSize = true;
             this.AppNameDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.AppNameDisplay.Location = new System.Drawing.Point(12, 9);
+            this.AppNameDisplay.Location = new System.Drawing.Point(12, 22);
             this.AppNameDisplay.Name = "AppNameDisplay";
             this.AppNameDisplay.Size = new System.Drawing.Size(273, 39);
             this.AppNameDisplay.TabIndex = 0;
@@ -77,7 +77,7 @@
             // PocketMenuTab
             // 
             this.PocketMenuTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.PocketMenuTab.Location = new System.Drawing.Point(40, 82);
+            this.PocketMenuTab.Location = new System.Drawing.Point(40, 95);
             this.PocketMenuTab.Name = "PocketMenuTab";
             this.PocketMenuTab.Size = new System.Drawing.Size(175, 28);
             this.PocketMenuTab.TabIndex = 1;
@@ -88,7 +88,7 @@
             // SpendingTab
             // 
             this.SpendingTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.SpendingTab.Location = new System.Drawing.Point(40, 130);
+            this.SpendingTab.Location = new System.Drawing.Point(40, 143);
             this.SpendingTab.Name = "SpendingTab";
             this.SpendingTab.Size = new System.Drawing.Size(175, 28);
             this.SpendingTab.TabIndex = 2;
@@ -99,7 +99,7 @@
             // AnalysisTab
             // 
             this.AnalysisTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.AnalysisTab.Location = new System.Drawing.Point(40, 179);
+            this.AnalysisTab.Location = new System.Drawing.Point(40, 192);
             this.AnalysisTab.Name = "AnalysisTab";
             this.AnalysisTab.Size = new System.Drawing.Size(175, 28);
             this.AnalysisTab.TabIndex = 3;
@@ -114,29 +114,29 @@
             this.MonthlyPanel.Controls.Add(this.ExpenseTextDisplay);
             this.MonthlyPanel.Controls.Add(this.CurrentTimeText);
             this.MonthlyPanel.Controls.Add(this.MonthlyText);
-            this.MonthlyPanel.Location = new System.Drawing.Point(291, 12);
+            this.MonthlyPanel.Location = new System.Drawing.Point(288, 12);
             this.MonthlyPanel.Name = "MonthlyPanel";
             this.MonthlyPanel.Size = new System.Drawing.Size(497, 426);
             this.MonthlyPanel.TabIndex = 11;
             // 
             // chart1
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart1.Legends.Add(legend4);
+            chartArea8.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea8);
+            legend8.Name = "Legend1";
+            this.chart1.Legends.Add(legend8);
             this.chart1.Location = new System.Drawing.Point(19, 220);
             this.chart1.Name = "chart1";
-            series7.ChartArea = "ChartArea1";
-            series7.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            series7.Legend = "Legend1";
-            series7.Name = "Income";
-            series8.ChartArea = "ChartArea1";
-            series8.Color = System.Drawing.Color.Red;
-            series8.Legend = "Legend1";
-            series8.Name = "Expenses";
-            this.chart1.Series.Add(series7);
-            this.chart1.Series.Add(series8);
+            series15.ChartArea = "ChartArea1";
+            series15.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            series15.Legend = "Legend1";
+            series15.Name = "Income";
+            series16.ChartArea = "ChartArea1";
+            series16.Color = System.Drawing.Color.Red;
+            series16.Legend = "Legend1";
+            series16.Name = "Expenses";
+            this.chart1.Series.Add(series15);
+            this.chart1.Series.Add(series16);
             this.chart1.Size = new System.Drawing.Size(457, 192);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
@@ -259,7 +259,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button1.Location = new System.Drawing.Point(40, 223);
+            this.button1.Location = new System.Drawing.Point(40, 236);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 26);
             this.button1.TabIndex = 12;
@@ -309,18 +309,21 @@
             // 
             this.TransactionName.HeaderText = "ชื่อ";
             this.TransactionName.Name = "TransactionName";
+            this.TransactionName.ReadOnly = true;
             this.TransactionName.Width = 153;
             // 
             // TransactionVolume
             // 
             this.TransactionVolume.HeaderText = "ปริมาณ";
             this.TransactionVolume.Name = "TransactionVolume";
+            this.TransactionVolume.ReadOnly = true;
             this.TransactionVolume.Width = 150;
             // 
             // TransactionType
             // 
             this.TransactionType.HeaderText = "จ่าย/นำเงินเข้าที่";
             this.TransactionType.Name = "TransactionType";
+            this.TransactionType.ReadOnly = true;
             this.TransactionType.Width = 150;
             // 
             // label1
@@ -338,10 +341,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.MonthlyPanel);
+            this.Controls.Add(this.AccountPanel);
             this.Controls.Add(this.transactionPanel);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.AccountPanel);
-            this.Controls.Add(this.MonthlyPanel);
             this.Controls.Add(this.AnalysisTab);
             this.Controls.Add(this.SpendingTab);
             this.Controls.Add(this.PocketMenuTab);

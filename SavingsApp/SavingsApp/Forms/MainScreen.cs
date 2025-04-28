@@ -15,6 +15,7 @@ namespace SavingsApp
     public partial class Form1: Form
     {
         SaveInfo info;
+        SaveMoneyInfo moneyinfo = new SaveMoneyInfo();
 
         public Form1()
         {
@@ -33,6 +34,7 @@ namespace SavingsApp
         public void BootInfo()
         {
             info.LoadData();
+            moneyinfo.LoadMoneyData();
         }
 
         private void SpendingTab_Click(object sender, EventArgs e)
@@ -80,6 +82,8 @@ namespace SavingsApp
 
         void AnalysisSetup()
         {
+            chart1.Series["Income"].Points.Clear();
+            chart1.Series["Expenses"].Points.Clear();
             IncomeTextDisplay.Text = "รายได้ : " + Account_Data.IncomeText.ToString() + " บาท";
             ExpenseTextDisplay.Text = "รายจ่าย : " + Math.Abs(Account_Data.ExpenseText).ToString() + " บาท";
             chart1.Series["Income"].Points.AddXY(DateTime.Now.ToString("MM-yyyy"), Account_Data.IncomeText);
@@ -89,6 +93,7 @@ namespace SavingsApp
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             info.SaveData();
+            moneyinfo.SaveMoneyData(int.Parse(Account_Data.SavingsVolume.ToString()), int.Parse(Account_Data.BillVolume.ToString()), int.Parse(Account_Data.MealsVolume.ToString()), int.Parse(Account_Data.TravelVolume.ToString()), int.Parse(Account_Data.WantsVolume.ToString()));
         }
 
         private void button1_Click(object sender, EventArgs e)

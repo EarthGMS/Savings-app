@@ -10,17 +10,17 @@ namespace SavingsApp.Codes
     {
         public string missionName { get; set; }
         public long missionValue { get; set; }
-        public long missionDay { get; set; }
+        public DateTime missionDate { get; set; }
 
         public static List<MissionData> missionList = new List<MissionData>();
 
-        public void SaveMissionData(string name, long value, long day)
+        public void SaveMissionData(string name, long value, DateTime date)
         {
             var missionData = new MissionData
             {
                 missionName = name,
                 missionValue = value,
-                missionDay = day
+                missionDate = date
             };
             missionList.Add(missionData);
         }
