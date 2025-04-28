@@ -32,3 +32,8 @@ D:\github repo\Savings-app\SavingsApp\SavingsApp\bin\Debug\System.Threading.Task
 D:\github repo\Savings-app\SavingsApp\SavingsApp\bin\Debug\System.ValueTuple.xml
 D:\github repo\Savings-app\SavingsApp\SavingsApp\obj\Debug\SavingsApp.Forms.addMission.resources
 D:\github repo\Savings-app\SavingsApp\SavingsApp\obj\Debug\SavingsApp.csproj.Up2Date
+D:\github repo\Savings-app\SavingsApp\SavingsApp\bin\Debug\SavingsApp.exe.manifest
+D:\github repo\Savings-app\SavingsApp\SavingsApp\bin\Debug\SavingsApp.application
+D:\github repo\Savings-app\SavingsApp\SavingsApp\obj\Debug\SavingsApp.TrustInfo.xml
+D:\github repo\Savings-app\SavingsApp\SavingsApp\obj\Debug\SavingsApp.exe.manifest
+D:\github repo\Savings-app\SavingsApp\SavingsApp\obj\Debug\SavingsApp.application
