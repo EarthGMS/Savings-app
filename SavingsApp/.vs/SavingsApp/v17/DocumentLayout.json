@@ -3,39 +3,51 @@
   "WorkspaceRootPath": "D:\\github repo\\Savings-app\\SavingsApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|SavingsApp||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|D:\\github repo\\Savings-app\\SavingsApp\\savingsapp\\codes\\missiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|solutionrelative:savingsapp\\codes\\missiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|D:\\github repo\\Savings-app\\SavingsApp\\savingsapp\\forms\\mission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|solutionrelative:savingsapp\\forms\\mission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|D:\\github repo\\Savings-app\\SavingsApp\\savingsapp\\forms\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|solutionrelative:savingsapp\\forms\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|D:\\github repo\\Savings-app\\SavingsApp\\savingsapp\\forms\\mission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|solutionrelative:savingsapp\\forms\\mission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|D:\\github repo\\Savings-app\\SavingsApp\\savingsapp\\forms\\addmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|solutionrelative:savingsapp\\forms\\addmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|D:\\github repo\\Savings-app\\SavingsApp\\savingsapp\\forms\\addmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|solutionrelative:savingsapp\\forms\\addmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|D:\\github repo\\Savings-app\\SavingsApp\\savingsapp\\forms\\transactionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|solutionrelative:savingsapp\\forms\\transactionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|D:\\github repo\\Savings-app\\SavingsApp\\savingsapp\\forms\\transactionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|solutionrelative:savingsapp\\forms\\transactionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|D:\\github repo\\Savings-app\\SavingsApp\\savingsapp\\forms\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|solutionrelative:savingsapp\\forms\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|d:\\github repo\\savings-app\\savingsapp\\savingsapp\\codes\\account_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|solutionrelative:savingsapp\\codes\\account_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|D:\\github repo\\Savings-app\\SavingsApp\\savingsapp\\forms\\mission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|solutionrelative:savingsapp\\forms\\mission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|D:\\github repo\\Savings-app\\SavingsApp\\savingsapp\\codes\\missiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|solutionrelative:savingsapp\\codes\\missiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|D:\\github repo\\Savings-app\\SavingsApp\\savingsapp\\forms\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|solutionrelative:savingsapp\\forms\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|D:\\github repo\\Savings-app\\SavingsApp\\savingsapp\\codes\\savemoneyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|solutionrelative:savingsapp\\codes\\savemoneyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|D:\\github repo\\Savings-app\\SavingsApp\\savingsapp\\forms\\addmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|solutionrelative:savingsapp\\forms\\addmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|SavingsApp||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|D:\\github repo\\Savings-app\\SavingsApp\\savingsapp\\codes\\transactiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -44,14 +56,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|D:\\github repo\\Savings-app\\SavingsApp\\savingsapp\\codes\\saveinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|solutionrelative:savingsapp\\codes\\saveinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|D:\\github repo\\Savings-app\\SavingsApp\\savingsapp\\forms\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|solutionrelative:savingsapp\\forms\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|D:\\github repo\\Savings-app\\SavingsApp\\savingsapp\\forms\\transactionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|solutionrelative:savingsapp\\forms\\transactionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|d:\\github repo\\savings-app\\savingsapp\\savingsapp\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|cc4014f5-b18d-439c-9352-f99d984cca85"
@@ -64,11 +68,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "TransactionForm.cs",
               "DocumentMoniker": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\TransactionForm.cs",
               "RelativeDocumentMoniker": "SavingsApp\\Forms\\TransactionForm.cs",
@@ -77,11 +81,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T05:16:27.406Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "addMission.cs [Design]",
               "DocumentMoniker": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\addMission.cs",
               "RelativeDocumentMoniker": "SavingsApp\\Forms\\addMission.cs",
@@ -89,11 +94,126 @@
               "RelativeToolTip": "SavingsApp\\Forms\\addMission.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T01:38:40.635Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Account_Data.cs",
+              "DocumentMoniker": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Codes\\Account_Data.cs",
+              "RelativeDocumentMoniker": "SavingsApp\\Codes\\Account_Data.cs",
+              "ToolTip": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Codes\\Account_Data.cs",
+              "RelativeToolTip": "SavingsApp\\Codes\\Account_Data.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T14:48:22.245Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainScreen.cs [Design]",
+              "DocumentMoniker": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\MainScreen.cs",
+              "RelativeDocumentMoniker": "SavingsApp\\Forms\\MainScreen.cs",
+              "ToolTip": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\MainScreen.cs [Design]",
+              "RelativeToolTip": "SavingsApp\\Forms\\MainScreen.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T10:35:06.465Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Mission.cs [Design]",
+              "DocumentMoniker": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\Mission.cs",
+              "RelativeDocumentMoniker": "SavingsApp\\Forms\\Mission.cs",
+              "ToolTip": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\Mission.cs [Design]",
+              "RelativeToolTip": "SavingsApp\\Forms\\Mission.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T10:36:00Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Mission.cs",
+              "DocumentMoniker": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\Mission.cs",
+              "RelativeDocumentMoniker": "SavingsApp\\Forms\\Mission.cs",
+              "ToolTip": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\Mission.cs",
+              "RelativeToolTip": "SavingsApp\\Forms\\Mission.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAqwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T07:21:56.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TransactionForm.cs [Design]",
+              "DocumentMoniker": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\TransactionForm.cs",
+              "RelativeDocumentMoniker": "SavingsApp\\Forms\\TransactionForm.cs",
+              "ToolTip": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\TransactionForm.cs [Design]",
+              "RelativeToolTip": "SavingsApp\\Forms\\TransactionForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T07:02:09.036Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainScreen.cs",
+              "DocumentMoniker": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\MainScreen.cs",
+              "RelativeDocumentMoniker": "SavingsApp\\Forms\\MainScreen.cs",
+              "ToolTip": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\MainScreen.cs",
+              "RelativeToolTip": "SavingsApp\\Forms\\MainScreen.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAqwHMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T03:50:19.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MissionData.cs",
+              "DocumentMoniker": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Codes\\MissionData.cs",
+              "RelativeDocumentMoniker": "SavingsApp\\Codes\\MissionData.cs",
+              "ToolTip": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Codes\\MissionData.cs",
+              "RelativeToolTip": "SavingsApp\\Codes\\MissionData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T10:23:37.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SaveMoneyInfo.cs",
+              "DocumentMoniker": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Codes\\SaveMoneyInfo.cs",
+              "RelativeDocumentMoniker": "SavingsApp\\Codes\\SaveMoneyInfo.cs",
+              "ToolTip": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Codes\\SaveMoneyInfo.cs",
+              "RelativeToolTip": "SavingsApp\\Codes\\SaveMoneyInfo.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAqwCoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T07:44:14.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "addMission.cs",
+              "DocumentMoniker": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\addMission.cs",
+              "RelativeDocumentMoniker": "SavingsApp\\Forms\\addMission.cs",
+              "ToolTip": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\addMission.cs",
+              "RelativeToolTip": "SavingsApp\\Forms\\addMission.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBgAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T10:22:37.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "SavingsApp",
               "DocumentMoniker": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\SavingsApp.csproj",
               "RelativeDocumentMoniker": "SavingsApp\\SavingsApp.csproj",
@@ -105,77 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SaveMoneyInfo.cs",
-              "DocumentMoniker": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Codes\\SaveMoneyInfo.cs",
-              "RelativeDocumentMoniker": "SavingsApp\\Codes\\SaveMoneyInfo.cs",
-              "ToolTip": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Codes\\SaveMoneyInfo.cs",
-              "RelativeToolTip": "SavingsApp\\Codes\\SaveMoneyInfo.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAqwCoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T07:44:14.48Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainScreen.cs [Design]",
-              "DocumentMoniker": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\MainScreen.cs",
-              "RelativeDocumentMoniker": "SavingsApp\\Forms\\MainScreen.cs",
-              "ToolTip": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\MainScreen.cs [Design]",
-              "RelativeToolTip": "SavingsApp\\Forms\\MainScreen.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T10:35:06.465Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Mission.cs [Design]",
-              "DocumentMoniker": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\Mission.cs",
-              "RelativeDocumentMoniker": "SavingsApp\\Forms\\Mission.cs",
-              "ToolTip": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\Mission.cs [Design]",
-              "RelativeToolTip": "SavingsApp\\Forms\\Mission.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T10:36:00Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "addMission.cs",
-              "DocumentMoniker": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\addMission.cs",
-              "RelativeDocumentMoniker": "SavingsApp\\Forms\\addMission.cs",
-              "ToolTip": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\addMission.cs",
-              "RelativeToolTip": "SavingsApp\\Forms\\addMission.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBgAAABnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T10:22:37.602Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MissionData.cs",
-              "DocumentMoniker": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Codes\\MissionData.cs",
-              "RelativeDocumentMoniker": "SavingsApp\\Codes\\MissionData.cs",
-              "ToolTip": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Codes\\MissionData.cs",
-              "RelativeToolTip": "SavingsApp\\Codes\\MissionData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T10:23:37.468Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Mission.cs",
-              "DocumentMoniker": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\Mission.cs",
-              "RelativeDocumentMoniker": "SavingsApp\\Forms\\Mission.cs",
-              "ToolTip": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\Mission.cs",
-              "RelativeToolTip": "SavingsApp\\Forms\\Mission.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAADwvycAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T07:21:56.739Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "TransactionData.cs",
               "DocumentMoniker": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Codes\\TransactionData.cs",
               "RelativeDocumentMoniker": "SavingsApp\\Codes\\TransactionData.cs",
@@ -187,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "SaveInfo.cs",
               "DocumentMoniker": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Codes\\SaveInfo.cs",
               "RelativeDocumentMoniker": "SavingsApp\\Codes\\SaveInfo.cs",
@@ -196,29 +246,6 @@
               "ViewState": "AgIAABcAAAAAAAAAAAAIwC0AAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-19T07:10:07.269Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MainScreen.cs",
-              "DocumentMoniker": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\MainScreen.cs",
-              "RelativeDocumentMoniker": "SavingsApp\\Forms\\MainScreen.cs",
-              "ToolTip": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\MainScreen.cs",
-              "RelativeToolTip": "SavingsApp\\Forms\\MainScreen.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAIwFUAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T03:50:19.605Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "TransactionForm.cs [Design]",
-              "DocumentMoniker": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\TransactionForm.cs",
-              "RelativeDocumentMoniker": "SavingsApp\\Forms\\TransactionForm.cs",
-              "ToolTip": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\TransactionForm.cs [Design]",
-              "RelativeToolTip": "SavingsApp\\Forms\\TransactionForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T07:02:09.036Z"
             }
           ]
         }

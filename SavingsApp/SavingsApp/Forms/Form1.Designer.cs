@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.AppNameDisplay = new System.Windows.Forms.Label();
             this.PocketMenuTab = new System.Windows.Forms.Button();
             this.SpendingTab = new System.Windows.Forms.Button();
@@ -121,22 +121,22 @@
             // 
             // chart1
             // 
-            chartArea8.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea8);
-            legend8.Name = "Legend1";
-            this.chart1.Legends.Add(legend8);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(19, 220);
             this.chart1.Name = "chart1";
-            series15.ChartArea = "ChartArea1";
-            series15.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            series15.Legend = "Legend1";
-            series15.Name = "Income";
-            series16.ChartArea = "ChartArea1";
-            series16.Color = System.Drawing.Color.Red;
-            series16.Legend = "Legend1";
-            series16.Name = "Expenses";
-            this.chart1.Series.Add(series15);
-            this.chart1.Series.Add(series16);
+            series1.ChartArea = "ChartArea1";
+            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            series1.Legend = "Legend1";
+            series1.Name = "Income";
+            series2.ChartArea = "ChartArea1";
+            series2.Color = System.Drawing.Color.Red;
+            series2.Legend = "Legend1";
+            series2.Name = "Expenses";
+            this.chart1.Series.Add(series1);
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(457, 192);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
@@ -263,7 +263,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 26);
             this.button1.TabIndex = 12;
-            this.button1.Text = "ภารกิจ";
+            this.button1.Text = "เป้าหมาย";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

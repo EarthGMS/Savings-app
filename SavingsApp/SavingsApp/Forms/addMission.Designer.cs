@@ -56,9 +56,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label1.Location = new System.Drawing.Point(23, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 37);
+            this.label1.Size = new System.Drawing.Size(183, 37);
             this.label1.TabIndex = 1;
-            this.label1.Text = "ภารกิจ";
+            this.label1.Text = "เพิ่มเป้าหมาย";
             // 
             // nameTextBox
             // 

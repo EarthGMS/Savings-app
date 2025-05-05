@@ -145,9 +145,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(46, 243);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(256, 37);
+            this.label5.Size = new System.Drawing.Size(261, 37);
             this.label5.TabIndex = 9;
-            this.label5.Text = "เงินเก็บตามรายจ่าย";
+            this.label5.Text = "หักเงินเพิ่มเพื่อออม";
             // 
             // PercentageBox
             // 

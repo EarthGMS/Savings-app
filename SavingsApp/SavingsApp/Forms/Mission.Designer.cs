@@ -30,12 +30,12 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.MissionDataGridBox = new System.Windows.Forms.DataGridView();
+            this.addMissionButton = new System.Windows.Forms.Button();
+            this.CurrentSaving = new System.Windows.Forms.Label();
             this.MissionName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MissionValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Day = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FinishMission = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.addMissionButton = new System.Windows.Forms.Button();
-            this.CurrentSaving = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MissionDataGridBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,9 +45,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label1.Location = new System.Drawing.Point(63, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 37);
+            this.label1.Size = new System.Drawing.Size(130, 37);
             this.label1.TabIndex = 0;
-            this.label1.Text = "ภารกิจ";
+            this.label1.Text = "เป้าหมาย";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // MissionDataGridBox
@@ -66,9 +66,31 @@
             this.MissionDataGridBox.TabIndex = 1;
             this.MissionDataGridBox.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.MissionData_CellContentClick);
             // 
+            // addMissionButton
+            // 
+            this.addMissionButton.Location = new System.Drawing.Point(70, 74);
+            this.addMissionButton.Name = "addMissionButton";
+            this.addMissionButton.Size = new System.Drawing.Size(93, 25);
+            this.addMissionButton.TabIndex = 2;
+            this.addMissionButton.Text = "เพิ่มเป้าหมาย";
+            this.addMissionButton.UseVisualStyleBackColor = true;
+            this.addMissionButton.Click += new System.EventHandler(this.addMissionButton_Click);
+            // 
+            // CurrentSaving
+            // 
+            this.CurrentSaving.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CurrentSaving.AutoSize = true;
+            this.CurrentSaving.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.CurrentSaving.Location = new System.Drawing.Point(188, 71);
+            this.CurrentSaving.Name = "CurrentSaving";
+            this.CurrentSaving.Size = new System.Drawing.Size(209, 25);
+            this.CurrentSaving.TabIndex = 3;
+            this.CurrentSaving.Text = "จำนวนเงินในขณะนี้ : [?]";
+            this.CurrentSaving.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // MissionName
             // 
-            this.MissionName.HeaderText = "ชื่อภารกิจ";
+            this.MissionName.HeaderText = "ชื่อ";
             this.MissionName.Name = "MissionName";
             this.MissionName.Width = 230;
             // 
@@ -86,34 +108,12 @@
             // 
             // FinishMission
             // 
-            this.FinishMission.HeaderText = "เสร็จสิ้นภารกิจ";
+            this.FinishMission.HeaderText = "เสร็จสิ้น";
             this.FinishMission.Name = "FinishMission";
             this.FinishMission.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.FinishMission.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.FinishMission.Text = "เสร็จสิ้น";
             this.FinishMission.UseColumnTextForButtonValue = true;
-            // 
-            // addMissionButton
-            // 
-            this.addMissionButton.Location = new System.Drawing.Point(70, 74);
-            this.addMissionButton.Name = "addMissionButton";
-            this.addMissionButton.Size = new System.Drawing.Size(93, 25);
-            this.addMissionButton.TabIndex = 2;
-            this.addMissionButton.Text = "เพิ่มภารกิจ";
-            this.addMissionButton.UseVisualStyleBackColor = true;
-            this.addMissionButton.Click += new System.EventHandler(this.addMissionButton_Click);
-            // 
-            // CurrentSaving
-            // 
-            this.CurrentSaving.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CurrentSaving.AutoSize = true;
-            this.CurrentSaving.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.CurrentSaving.Location = new System.Drawing.Point(188, 71);
-            this.CurrentSaving.Name = "CurrentSaving";
-            this.CurrentSaving.Size = new System.Drawing.Size(209, 25);
-            this.CurrentSaving.TabIndex = 3;
-            this.CurrentSaving.Text = "จำนวนเงินในขณะนี้ : [?]";
-            this.CurrentSaving.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Mission
             // 
@@ -137,10 +137,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView MissionDataGridBox;
         private System.Windows.Forms.Button addMissionButton;
+        private System.Windows.Forms.Label CurrentSaving;
         private System.Windows.Forms.DataGridViewTextBoxColumn MissionName;
         private System.Windows.Forms.DataGridViewTextBoxColumn MissionValue;
         private System.Windows.Forms.DataGridViewTextBoxColumn Day;
         private System.Windows.Forms.DataGridViewButtonColumn FinishMission;
-        private System.Windows.Forms.Label CurrentSaving;
     }
 }

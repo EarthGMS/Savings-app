@@ -111,6 +111,7 @@ namespace SavingsApp
         //TRANSACTION DATA FUNCTION
         void setupTransactionData()
         {
+            transactionGridView.Rows.Clear();  
             for (int i = 0; i < TransactionData.transactionList.Count(); i++)
             {
                 transactionGridView.Rows.Add(TransactionData.transactionList[i].transactionName, TransactionData.transactionList[i].transactionValue, "");
