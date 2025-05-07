@@ -16,7 +16,9 @@ namespace SavingsApp
     {
         SaveInfo info;
         SaveMoneyInfo moneyinfo = new SaveMoneyInfo();
-
+        MissionData missionData = new MissionData();
+        TransactionData transactionData = new TransactionData();
+        string transactionType;
         public Form1()
         {
             InitializeComponent();
@@ -29,6 +31,8 @@ namespace SavingsApp
             PocketSetup();
             AnalysisSetup();
             setupTransactionData();
+            missionData.LoadMissionData();
+            transactionData.LoadTransactionData();
         }
 
         public void BootInfo()
@@ -94,6 +98,8 @@ namespace SavingsApp
         {
             info.SaveData();
             moneyinfo.SaveMoneyData(int.Parse(Account_Data.SavingsVolume.ToString()), int.Parse(Account_Data.BillVolume.ToString()), int.Parse(Account_Data.MealsVolume.ToString()), int.Parse(Account_Data.TravelVolume.ToString()), int.Parse(Account_Data.WantsVolume.ToString()));
+            missionData.MissionDataToJson();
+            transactionData.TransactionDataToJson();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -114,7 +120,28 @@ namespace SavingsApp
             transactionGridView.Rows.Clear();  
             for (int i = 0; i < TransactionData.transactionList.Count(); i++)
             {
-                transactionGridView.Rows.Add(TransactionData.transactionList[i].transactionName, TransactionData.transactionList[i].transactionValue, "");
+                if (TransactionData.transactionList[i].transactionType == 0)
+                {
+                    transactionType = "เงินเก็บ";
+                }
+                else if (TransactionData.transactionList[i].transactionType == 1)
+                {
+                    transactionType = "ค่าบิล";
+                }
+                else if (TransactionData.transactionList[i].transactionType == 2)
+                {
+                    transactionType = "ค่ากิน";
+                }
+                else if (TransactionData.transactionList[i].transactionType == 3)
+                {
+                    transactionType = "ค่าเที่ยว";
+                }
+                else if (TransactionData.transactionList[i].transactionType == 4)
+                {
+                    transactionType = "เงินฟุ่มเฟือย";
+
+                }
+                transactionGridView.Rows.Add(TransactionData.transactionList[i].transactionName, TransactionData.transactionList[i].transactionValue, transactionType);
             }
         }
     }

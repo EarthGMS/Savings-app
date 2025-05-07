@@ -55,10 +55,11 @@ namespace SavingsApp.Codes
             }
         }
 
-        public void CalculatePercentage(float percentage, float expense)
+        public float CalculatePercentage(float percentage, float expense)
         {
             float taxRate = Math.Abs(expense) * percentage / 100;
             SavingsVolume += (long)taxRate;
+            return taxRate;
         }
     }
 }

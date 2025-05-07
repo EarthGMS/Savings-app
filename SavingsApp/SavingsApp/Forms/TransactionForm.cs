@@ -7,6 +7,7 @@ namespace SavingsApp
     public partial class TransactionForm: Form
     {
         Account_Data account;
+        float taxAmount;
         public TransactionForm()
         {
             InitializeComponent();
@@ -22,10 +23,10 @@ namespace SavingsApp
                 account.PocketTransaction(int.Parse(TransactionValue.Text), PocketList.SelectedIndex);
                 if(int.Parse(TransactionValue.Text) < 0)
                 {
-                    account.CalculatePercentage(int.Parse(PercentageBox.Text), int.Parse(TransactionValue.Text));
+                    taxAmount = -account.CalculatePercentage(int.Parse(PercentageBox.Text), int.Parse(TransactionValue.Text));
                 }
                 TransactionData transactionData = new TransactionData();
-                transactionData.SaveTransactionData(TransactionName.Text, int.Parse(TransactionValue.Text));
+                transactionData.SaveTransactionData(TransactionName.Text, float.Parse(TransactionValue.Text), taxAmount, PocketList.SelectedIndex);
             }
             Hide();
         }

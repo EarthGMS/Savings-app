@@ -41,13 +41,15 @@
             this.PercentageBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.DateWrittenBox = new System.Windows.Forms.DateTimePicker();
+            this.DateLabel = new System.Windows.Forms.Label();
             AcceptForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AcceptForm
             // 
             AcceptForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            AcceptForm.Location = new System.Drawing.Point(99, 345);
+            AcceptForm.Location = new System.Drawing.Point(98, 386);
             AcceptForm.Name = "AcceptForm";
             AcceptForm.Size = new System.Drawing.Size(156, 33);
             AcceptForm.TabIndex = 6;
@@ -143,7 +145,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(46, 243);
+            this.label5.Location = new System.Drawing.Point(46, 278);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(261, 37);
             this.label5.TabIndex = 9;
@@ -152,7 +154,7 @@
             // PercentageBox
             // 
             this.PercentageBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.PercentageBox.Location = new System.Drawing.Point(143, 295);
+            this.PercentageBox.Location = new System.Drawing.Point(144, 330);
             this.PercentageBox.Name = "PercentageBox";
             this.PercentageBox.Size = new System.Drawing.Size(171, 26);
             this.PercentageBox.TabIndex = 10;
@@ -162,7 +164,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label6.Location = new System.Drawing.Point(21, 298);
+            this.label6.Location = new System.Drawing.Point(21, 333);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 20);
             this.label6.TabIndex = 11;
@@ -172,17 +174,36 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label7.Location = new System.Drawing.Point(321, 298);
+            this.label7.Location = new System.Drawing.Point(321, 330);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(23, 20);
             this.label7.TabIndex = 12;
             this.label7.Text = "%";
             // 
+            // DateWrittenBox
+            // 
+            this.DateWrittenBox.Location = new System.Drawing.Point(144, 237);
+            this.DateWrittenBox.Name = "DateWrittenBox";
+            this.DateWrittenBox.Size = new System.Drawing.Size(200, 20);
+            this.DateWrittenBox.TabIndex = 13;
+            // 
+            // DateLabel
+            // 
+            this.DateLabel.AutoSize = true;
+            this.DateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.DateLabel.Location = new System.Drawing.Point(22, 237);
+            this.DateLabel.Name = "DateLabel";
+            this.DateLabel.Size = new System.Drawing.Size(116, 20);
+            this.DateLabel.TabIndex = 14;
+            this.DateLabel.Text = "เก็บที่/จ่ายเงินจาก";
+            // 
             // TransactionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 406);
+            this.ClientSize = new System.Drawing.Size(368, 455);
+            this.Controls.Add(this.DateLabel);
+            this.Controls.Add(this.DateWrittenBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.PercentageBox);
@@ -217,5 +238,7 @@
         private System.Windows.Forms.TextBox PercentageBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DateTimePicker DateWrittenBox;
+        private System.Windows.Forms.Label DateLabel;
     }
 }
