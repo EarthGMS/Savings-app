@@ -11,8 +11,8 @@ namespace SavingsApp.Codes
 {
     class SaveInfo
     {
-        public long CurrentSavings { get; set; }
-        public long CurrentExpenses { get; set; }
+        public float CurrentSavings { get; set; }
+        public float CurrentExpenses { get; set; }
         public int CurrentMonth { get; set; }
 
         public void SaveData()

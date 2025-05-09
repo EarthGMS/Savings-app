@@ -115,7 +115,7 @@ namespace SavingsApp
         }
 
         //TRANSACTION DATA FUNCTION
-        void setupTransactionData()
+        public void setupTransactionData()
         {
             transactionGridView.Rows.Clear();  
             for (int i = 0; i < TransactionData.transactionList.Count(); i++)
@@ -141,8 +141,16 @@ namespace SavingsApp
                     transactionType = "เงินฟุ่มเฟือย";
 
                 }
-                transactionGridView.Rows.Add(TransactionData.transactionList[i].transactionName, TransactionData.transactionList[i].transactionValue, transactionType);
+                if(DateDisplay.Value.Date == TransactionData.transactionList[i].transactionDate.Date)
+                {
+                    transactionGridView.Rows.Add(TransactionData.transactionList[i].transactionName, TransactionData.transactionList[i].transactionValue, transactionType);
+                }
             }
+        }
+
+        private void DateDisplay_ValueChanged(object sender, EventArgs e)
+        {
+            setupTransactionData();
         }
     }
 }

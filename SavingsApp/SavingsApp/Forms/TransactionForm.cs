@@ -6,6 +6,7 @@ namespace SavingsApp
 {
     public partial class TransactionForm: Form
     {
+        int isPocketNegative;
         Account_Data account;
         float taxAmount;
         public TransactionForm()
@@ -19,16 +20,24 @@ namespace SavingsApp
         {
             if(TransactionValue.Text != null)
             {
-                account.CalculateTransaction(int.Parse(TransactionValue.Text));
-                account.PocketTransaction(int.Parse(TransactionValue.Text), PocketList.SelectedIndex);
-                if(int.Parse(TransactionValue.Text) < 0)
+                if (int.Parse(TransactionValue.Text) < 0)
                 {
                     taxAmount = -account.CalculatePercentage(int.Parse(PercentageBox.Text), int.Parse(TransactionValue.Text));
                 }
+                isPocketNegative = account.checkPocketNegative(int.Parse(TransactionValue.Text), taxAmount, PocketList.SelectedIndex);
+                if (isPocketNegative == 1)
+                {
+                    MessageBox.Show("กรุณาเลือกกระเป๋าเงินที่มีเงินเพียงพอ");
+                    taxAmount = 0;
+                    return;
+                }
+                account.CalculateTransaction(int.Parse(TransactionValue.Text));
+                account.PocketTransaction(int.Parse(TransactionValue.Text), PocketList.SelectedIndex);
+                
                 TransactionData transactionData = new TransactionData();
-                transactionData.SaveTransactionData(TransactionName.Text, float.Parse(TransactionValue.Text), taxAmount, PocketList.SelectedIndex);
+                transactionData.SaveTransactionData(TransactionName.Text, float.Parse(TransactionValue.Text), taxAmount, PocketList.SelectedIndex, DateWrittenBox.Value);
+                Hide();
             }
-            Hide();
         }
     }
 }

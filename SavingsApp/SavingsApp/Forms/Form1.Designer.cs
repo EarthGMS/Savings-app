@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.AppNameDisplay = new System.Windows.Forms.Label();
             this.PocketMenuTab = new System.Windows.Forms.Button();
             this.SpendingTab = new System.Windows.Forms.Button();
@@ -51,13 +51,14 @@
             this.AccountText = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.transactionPanel = new System.Windows.Forms.Panel();
+            this.DateDisplay = new System.Windows.Forms.DateTimePicker();
             this.addTransactionButton = new System.Windows.Forms.Button();
             this.transactionGridView = new System.Windows.Forms.DataGridView();
             this.TransactionName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TransactionVolume = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TransactionType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.DateDisplay = new System.Windows.Forms.DateTimePicker();
+            this.SelectDateLabel = new System.Windows.Forms.Label();
             this.MonthlyPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.AccountPanel.SuspendLayout();
@@ -115,29 +116,29 @@
             this.MonthlyPanel.Controls.Add(this.ExpenseTextDisplay);
             this.MonthlyPanel.Controls.Add(this.CurrentTimeText);
             this.MonthlyPanel.Controls.Add(this.MonthlyText);
-            this.MonthlyPanel.Location = new System.Drawing.Point(288, 12);
+            this.MonthlyPanel.Location = new System.Drawing.Point(294, 12);
             this.MonthlyPanel.Name = "MonthlyPanel";
             this.MonthlyPanel.Size = new System.Drawing.Size(497, 426);
             this.MonthlyPanel.TabIndex = 11;
             // 
             // chart1
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(19, 220);
             this.chart1.Name = "chart1";
-            series5.ChartArea = "ChartArea1";
-            series5.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            series5.Legend = "Legend1";
-            series5.Name = "Income";
-            series6.ChartArea = "ChartArea1";
-            series6.Color = System.Drawing.Color.Red;
-            series6.Legend = "Legend1";
-            series6.Name = "Expenses";
-            this.chart1.Series.Add(series5);
-            this.chart1.Series.Add(series6);
+            series3.ChartArea = "ChartArea1";
+            series3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            series3.Legend = "Legend1";
+            series3.Name = "Income";
+            series4.ChartArea = "ChartArea1";
+            series4.Color = System.Drawing.Color.Red;
+            series4.Legend = "Legend1";
+            series4.Name = "Expenses";
+            this.chart1.Series.Add(series3);
+            this.chart1.Series.Add(series4);
             this.chart1.Size = new System.Drawing.Size(457, 192);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
@@ -270,6 +271,7 @@
             // 
             // transactionPanel
             // 
+            this.transactionPanel.Controls.Add(this.SelectDateLabel);
             this.transactionPanel.Controls.Add(this.DateDisplay);
             this.transactionPanel.Controls.Add(this.addTransactionButton);
             this.transactionPanel.Controls.Add(this.transactionGridView);
@@ -278,6 +280,14 @@
             this.transactionPanel.Name = "transactionPanel";
             this.transactionPanel.Size = new System.Drawing.Size(497, 426);
             this.transactionPanel.TabIndex = 6;
+            // 
+            // DateDisplay
+            // 
+            this.DateDisplay.Location = new System.Drawing.Point(276, 87);
+            this.DateDisplay.Name = "DateDisplay";
+            this.DateDisplay.Size = new System.Drawing.Size(200, 20);
+            this.DateDisplay.TabIndex = 15;
+            this.DateDisplay.ValueChanged += new System.EventHandler(this.DateDisplay_ValueChanged);
             // 
             // addTransactionButton
             // 
@@ -338,12 +348,15 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "รายรับ-รายจ่าย";
             // 
-            // DateDisplay
+            // SelectDateLabel
             // 
-            this.DateDisplay.Location = new System.Drawing.Point(276, 87);
-            this.DateDisplay.Name = "DateDisplay";
-            this.DateDisplay.Size = new System.Drawing.Size(200, 20);
-            this.DateDisplay.TabIndex = 15;
+            this.SelectDateLabel.AutoSize = true;
+            this.SelectDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.SelectDateLabel.Location = new System.Drawing.Point(139, 89);
+            this.SelectDateLabel.Name = "SelectDateLabel";
+            this.SelectDateLabel.Size = new System.Drawing.Size(131, 15);
+            this.SelectDateLabel.TabIndex = 16;
+            this.SelectDateLabel.Text = "เลือกวันที่ต้องการดูรายการ";
             // 
             // Form1
             // 
@@ -359,7 +372,7 @@
             this.Controls.Add(this.PocketMenuTab);
             this.Controls.Add(this.AppNameDisplay);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Saver\'s Note";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.MonthlyPanel.ResumeLayout(false);
             this.MonthlyPanel.PerformLayout();
@@ -402,6 +415,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TransactionType;
         private System.Windows.Forms.Button addTransactionButton;
         private System.Windows.Forms.DateTimePicker DateDisplay;
+        private System.Windows.Forms.Label SelectDateLabel;
     }
 }
 

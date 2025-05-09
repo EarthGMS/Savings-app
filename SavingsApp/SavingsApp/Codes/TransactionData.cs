@@ -16,16 +16,18 @@ namespace SavingsApp.Codes
         public string transactionName { get; set; }
         public float transactionValue { get; set; }
         public float transactionType { get; set; }
+        public DateTime transactionDate { get; set; }
 
         public static List<TransactionData> transactionList = new List<TransactionData>();
 
-        public void SaveTransactionData(string name, float value, float taxRate, int type)
+        public void SaveTransactionData(string name, float value, float taxRate, int type, DateTime date)
         {
             var transactionData = new TransactionData
             {
                 transactionName = name,
                 transactionValue = value + taxRate,
-                transactionType = type
+                transactionType = type,
+                transactionDate = date
             };
 
             transactionList.Add(transactionData);
