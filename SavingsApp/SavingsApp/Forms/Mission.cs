@@ -39,7 +39,7 @@ namespace SavingsApp.Forms
 
         private void MissionData_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (int.Parse(MissionDataGridBox.CurrentRow.Cells[2].Value?.ToString()) > Account_Data.SavingsVolume)
+            if (int.Parse(MissionDataGridBox.CurrentRow.Cells[3].Value?.ToString()) > Account_Data.SavingsVolume)
             {
                 MessageBox.Show("ยังไม่ถึงกำหนดการเก็บเงิน");
             }

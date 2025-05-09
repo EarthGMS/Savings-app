@@ -31,12 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mission));
             this.label1 = new System.Windows.Forms.Label();
             this.MissionDataGridBox = new System.Windows.Forms.DataGridView();
+            this.addMissionButton = new System.Windows.Forms.Button();
+            this.CurrentSaving = new System.Windows.Forms.Label();
+            this.serviceController1 = new System.ServiceProcess.ServiceController();
             this.MissionName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MissionValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Day = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FinishMission = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.addMissionButton = new System.Windows.Forms.Button();
-            this.CurrentSaving = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MissionDataGridBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,33 +68,6 @@
             this.MissionDataGridBox.TabIndex = 1;
             this.MissionDataGridBox.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.MissionData_CellContentClick);
             // 
-            // MissionName
-            // 
-            this.MissionName.HeaderText = "ชื่อ";
-            this.MissionName.Name = "MissionName";
-            this.MissionName.Width = 230;
-            // 
-            // MissionValue
-            // 
-            this.MissionValue.HeaderText = "จำนวนเงิน";
-            this.MissionValue.Name = "MissionValue";
-            this.MissionValue.Width = 150;
-            // 
-            // Day
-            // 
-            this.Day.HeaderText = "วัน";
-            this.Day.Name = "Day";
-            this.Day.Width = 50;
-            // 
-            // FinishMission
-            // 
-            this.FinishMission.HeaderText = "เสร็จสิ้น";
-            this.FinishMission.Name = "FinishMission";
-            this.FinishMission.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.FinishMission.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.FinishMission.Text = "เสร็จสิ้น";
-            this.FinishMission.UseColumnTextForButtonValue = true;
-            // 
             // addMissionButton
             // 
             this.addMissionButton.Location = new System.Drawing.Point(70, 74);
@@ -115,6 +89,35 @@
             this.CurrentSaving.TabIndex = 3;
             this.CurrentSaving.Text = "จำนวนเงินในขณะนี้ : [?]";
             this.CurrentSaving.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // MissionName
+            // 
+            this.MissionName.HeaderText = "ชื่อ";
+            this.MissionName.Name = "MissionName";
+            this.MissionName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.MissionName.Width = 230;
+            // 
+            // MissionValue
+            // 
+            this.MissionValue.HeaderText = "จำนวนเงิน";
+            this.MissionValue.Name = "MissionValue";
+            this.MissionValue.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.MissionValue.Width = 150;
+            // 
+            // Day
+            // 
+            this.Day.HeaderText = "วัน";
+            this.Day.Name = "Day";
+            this.Day.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Day.Width = 50;
+            // 
+            // FinishMission
+            // 
+            this.FinishMission.HeaderText = "เสร็จสิ้น";
+            this.FinishMission.Name = "FinishMission";
+            this.FinishMission.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.FinishMission.Text = "เสร็จสิ้น";
+            this.FinishMission.UseColumnTextForButtonValue = true;
             // 
             // Mission
             // 
@@ -141,6 +144,7 @@
         private System.Windows.Forms.DataGridView MissionDataGridBox;
         private System.Windows.Forms.Button addMissionButton;
         private System.Windows.Forms.Label CurrentSaving;
+        private System.ServiceProcess.ServiceController serviceController1;
         private System.Windows.Forms.DataGridViewTextBoxColumn MissionName;
         private System.Windows.Forms.DataGridViewTextBoxColumn MissionValue;
         private System.Windows.Forms.DataGridViewTextBoxColumn Day;
