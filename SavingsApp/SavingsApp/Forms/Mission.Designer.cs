@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mission));
             this.label1 = new System.Windows.Forms.Label();
             this.MissionDataGridBox = new System.Windows.Forms.DataGridView();
-            this.addMissionButton = new System.Windows.Forms.Button();
-            this.CurrentSaving = new System.Windows.Forms.Label();
             this.MissionName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MissionValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Day = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FinishMission = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.addMissionButton = new System.Windows.Forms.Button();
+            this.CurrentSaving = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MissionDataGridBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,28 +67,6 @@
             this.MissionDataGridBox.TabIndex = 1;
             this.MissionDataGridBox.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.MissionData_CellContentClick);
             // 
-            // addMissionButton
-            // 
-            this.addMissionButton.Location = new System.Drawing.Point(70, 74);
-            this.addMissionButton.Name = "addMissionButton";
-            this.addMissionButton.Size = new System.Drawing.Size(93, 25);
-            this.addMissionButton.TabIndex = 2;
-            this.addMissionButton.Text = "เพิ่มเป้าหมาย";
-            this.addMissionButton.UseVisualStyleBackColor = true;
-            this.addMissionButton.Click += new System.EventHandler(this.addMissionButton_Click);
-            // 
-            // CurrentSaving
-            // 
-            this.CurrentSaving.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CurrentSaving.AutoSize = true;
-            this.CurrentSaving.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.CurrentSaving.Location = new System.Drawing.Point(188, 71);
-            this.CurrentSaving.Name = "CurrentSaving";
-            this.CurrentSaving.Size = new System.Drawing.Size(209, 25);
-            this.CurrentSaving.TabIndex = 3;
-            this.CurrentSaving.Text = "จำนวนเงินในขณะนี้ : [?]";
-            this.CurrentSaving.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // MissionName
             // 
             this.MissionName.HeaderText = "ชื่อ";
@@ -115,6 +94,28 @@
             this.FinishMission.Text = "เสร็จสิ้น";
             this.FinishMission.UseColumnTextForButtonValue = true;
             // 
+            // addMissionButton
+            // 
+            this.addMissionButton.Location = new System.Drawing.Point(70, 74);
+            this.addMissionButton.Name = "addMissionButton";
+            this.addMissionButton.Size = new System.Drawing.Size(93, 25);
+            this.addMissionButton.TabIndex = 2;
+            this.addMissionButton.Text = "เพิ่มเป้าหมาย";
+            this.addMissionButton.UseVisualStyleBackColor = true;
+            this.addMissionButton.Click += new System.EventHandler(this.addMissionButton_Click);
+            // 
+            // CurrentSaving
+            // 
+            this.CurrentSaving.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CurrentSaving.AutoSize = true;
+            this.CurrentSaving.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.CurrentSaving.Location = new System.Drawing.Point(188, 71);
+            this.CurrentSaving.Name = "CurrentSaving";
+            this.CurrentSaving.Size = new System.Drawing.Size(209, 25);
+            this.CurrentSaving.TabIndex = 3;
+            this.CurrentSaving.Text = "จำนวนเงินในขณะนี้ : [?]";
+            this.CurrentSaving.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // Mission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -124,8 +125,10 @@
             this.Controls.Add(this.addMissionButton);
             this.Controls.Add(this.MissionDataGridBox);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Mission";
-            this.Text = "Mission";
+            this.Text = "Saver\'s Note : เป้าหมาย";
             ((System.ComponentModel.ISupportInitialize)(this.MissionDataGridBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

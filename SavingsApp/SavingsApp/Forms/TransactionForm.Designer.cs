@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.Button AcceptForm;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TransactionForm));
             this.TransactionValue = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,6 +50,7 @@
             // AcceptForm
             // 
             AcceptForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            AcceptForm.ForeColor = System.Drawing.Color.Black;
             AcceptForm.Location = new System.Drawing.Point(98, 386);
             AcceptForm.Name = "AcceptForm";
             AcceptForm.Size = new System.Drawing.Size(156, 33);
@@ -217,8 +219,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TransactionValue);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TransactionForm";
-            this.Text = "TransactionForm";
+            this.Text = "Saver\'s Note : กรอกรายรับ-รายจ่าย";
             this.ResumeLayout(false);
             this.PerformLayout();
 
