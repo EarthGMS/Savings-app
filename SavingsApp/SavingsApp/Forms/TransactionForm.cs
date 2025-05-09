@@ -18,7 +18,8 @@ namespace SavingsApp
 
         private void AcceptForm_Click(object sender, EventArgs e)
         {
-            if(TransactionValue.Text != null)
+            float number_check;
+            if (TransactionValue.Text != null && float.TryParse(TransactionValue.Text, out number_check))
             {
                 if (int.Parse(TransactionValue.Text) < 0)
                 {
@@ -33,10 +34,17 @@ namespace SavingsApp
                 }
                 account.CalculateTransaction(int.Parse(TransactionValue.Text));
                 account.PocketTransaction(int.Parse(TransactionValue.Text), PocketList.SelectedIndex);
-                
+
                 TransactionData transactionData = new TransactionData();
                 transactionData.SaveTransactionData(TransactionName.Text, float.Parse(TransactionValue.Text), taxAmount, PocketList.SelectedIndex, DateWrittenBox.Value);
                 Hide();
+            }
+            else
+            {
+                if (!float.TryParse(TransactionValue.Text, out number_check))
+                {
+                    MessageBox.Show("กรุณากรอกตัวเลข");
+                }
             }
         }
     }
