@@ -97,7 +97,7 @@ namespace SavingsApp
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             info.SaveData();
-            moneyinfo.SaveMoneyData(int.Parse(Account_Data.SavingsVolume.ToString()), int.Parse(Account_Data.BillVolume.ToString()), int.Parse(Account_Data.MealsVolume.ToString()), int.Parse(Account_Data.TravelVolume.ToString()), int.Parse(Account_Data.WantsVolume.ToString()));
+            moneyinfo.SaveMoneyData(float.Parse(Account_Data.SavingsVolume.ToString()), float.Parse(Account_Data.BillVolume.ToString()), float.Parse(Account_Data.MealsVolume.ToString()), float.Parse(Account_Data.TravelVolume.ToString()), float.Parse(Account_Data.WantsVolume.ToString()));
             missionData.MissionDataToJson();
             transactionData.TransactionDataToJson();
         }

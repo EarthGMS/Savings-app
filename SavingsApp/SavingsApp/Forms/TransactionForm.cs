@@ -21,19 +21,19 @@ namespace SavingsApp
             float number_check;
             if (TransactionValue.Text != null && float.TryParse(TransactionValue.Text, out number_check))
             {
-                if (int.Parse(TransactionValue.Text) < 0)
+                if (float.Parse(TransactionValue.Text) < 0)
                 {
-                    taxAmount = -account.CalculatePercentage(int.Parse(PercentageBox.Text), int.Parse(TransactionValue.Text));
+                    taxAmount = -account.CalculatePercentage(Math.Abs(float.Parse(PercentageBox.Text)), float.Parse(TransactionValue.Text));
                 }
-                isPocketNegative = account.checkPocketNegative(int.Parse(TransactionValue.Text), taxAmount, PocketList.SelectedIndex);
+                isPocketNegative = account.checkPocketNegative(float.Parse(TransactionValue.Text), taxAmount, PocketList.SelectedIndex);
                 if (isPocketNegative == 1)
                 {
                     MessageBox.Show("กรุณาเลือกกระเป๋าเงินที่มีเงินเพียงพอ");
                     taxAmount = 0;
                     return;
                 }
-                account.CalculateTransaction(int.Parse(TransactionValue.Text));
-                account.PocketTransaction(int.Parse(TransactionValue.Text), PocketList.SelectedIndex);
+                account.CalculateTransaction(float.Parse(TransactionValue.Text) + taxAmount);
+                account.PocketTransaction(float.Parse(TransactionValue.Text) + taxAmount, PocketList.SelectedIndex);
 
                 TransactionData transactionData = new TransactionData();
                 transactionData.SaveTransactionData(TransactionName.Text, float.Parse(TransactionValue.Text), taxAmount, PocketList.SelectedIndex, DateWrittenBox.Value);

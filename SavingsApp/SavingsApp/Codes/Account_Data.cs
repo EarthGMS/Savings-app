@@ -19,7 +19,7 @@ namespace SavingsApp.Codes
 
         public static float IncomeText;
         public static float ExpenseText;
-        public void CalculateTransaction(int moneyTransaction)
+        public void CalculateTransaction(float moneyTransaction)
         {
             if(moneyTransaction > 0)
             {
@@ -31,7 +31,7 @@ namespace SavingsApp.Codes
             }
         }
 
-        public void PocketTransaction(int moneyTransaction, int PocketType)
+        public void PocketTransaction(float moneyTransaction, int PocketType)
         {
             if (PocketType == 0)
             {

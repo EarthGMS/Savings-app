@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>D:\github repo\Savings-app\SavingsApp\SavingsApp\publish\1.0.1\</PublishUrl>
+    <PublishUrl>D:\github repo\Savings-app\SavingsApp\SavingsApp\publish\1.0.2\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -118,7 +118,6 @@
     <Compile Include="Codes\SaveInfo.cs" />
     <Compile Include="Codes\SaveMoneyInfo.cs" />
     <Compile Include="Codes\TransactionData.cs" />
-    <Compile Include="Codes\UI_Setup.cs" />
     <Compile Include="Forms\addMission.cs">
       <SubType>Form</SubType>
     </Compile>

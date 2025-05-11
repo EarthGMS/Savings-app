@@ -44,8 +44,18 @@ namespace SavingsApp.Codes
             {
                 string json = File.ReadAllText("AnalysisData.json");
                 SaveInfo info = JsonSerializer.Deserialize<SaveInfo>(json);
-                Account_Data.IncomeText = info.CurrentSavings;
-                Account_Data.ExpenseText = info.CurrentExpenses;
+                CurrentMonth = info.CurrentMonth;
+                if(info.CurrentMonth == int.Parse(DateTime.Now.ToString("MM")))
+                {
+                    Account_Data.IncomeText = info.CurrentSavings;
+                    Account_Data.ExpenseText = info.CurrentExpenses;
+                }
+                else
+                {
+                    Account_Data.IncomeText = 0;
+                    Account_Data.ExpenseText = 0;
+                    CurrentMonth = int.Parse(DateTime.Now.ToString("MM"));
+                }
             }
         }
     }

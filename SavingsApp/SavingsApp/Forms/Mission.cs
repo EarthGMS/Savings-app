@@ -43,7 +43,7 @@ namespace SavingsApp.Forms
             {
                 return;
             }
-            if (int.Parse(MissionDataGridBox.CurrentRow.Cells[3].Value?.ToString()) > Account_Data.SavingsVolume)
+            if (float.Parse(MissionDataGridBox.CurrentRow.Cells[1].Value?.ToString()) > Account_Data.SavingsVolume)
             {
                 MessageBox.Show("ยังไม่ถึงกำหนดการเก็บเงิน");
             }
@@ -51,6 +51,7 @@ namespace SavingsApp.Forms
             {
                 Account_Data account = new Account_Data();
                 account.PocketTransaction(-int.Parse(MissionDataGridBox.CurrentRow.Cells[1].Value?.ToString()), 0);
+                MissionData.missionList.RemoveAt(MissionDataGridBox.CurrentRow.Index);
                 MissionDataGridBox.Rows.RemoveAt(MissionDataGridBox.CurrentRow.Index);
             }
         }

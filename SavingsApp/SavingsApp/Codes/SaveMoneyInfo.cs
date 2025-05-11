@@ -10,13 +10,13 @@ namespace SavingsApp.Codes
 {
     class SaveMoneyInfo
     {
-        public long ReserveInfo { get; set; }
-        public long BillInfo { get; set; }
-        public long ConsumptionInfo { get; set; }
-        public long TravelInfo { get; set; }
-        public long WantsInfo { get; set; }
+        public float ReserveInfo { get; set; }
+        public float BillInfo { get; set; }
+        public float ConsumptionInfo { get; set; }
+        public float TravelInfo { get; set; }
+        public float WantsInfo { get; set; }
 
-        public void SaveMoneyData(long reserve, long bill, long consumption, long travel, long wants)
+        public void SaveMoneyData(float reserve, float bill, float consumption, float travel, float wants)
         {
             var data = new SaveMoneyInfo
             {

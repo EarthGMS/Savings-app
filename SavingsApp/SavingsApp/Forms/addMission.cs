@@ -21,8 +21,16 @@ namespace SavingsApp.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             //add a new mission
+            float number_check;
             MissionData missionData = new MissionData();
-            missionData.SaveMissionData(nameTextBox.Text, long.Parse(priceTextBox.Text), TargetDate.Value);
+            if (!float.TryParse(priceTextBox.Text, out number_check))
+            {
+                MessageBox.Show("กรุณากรอกตัวเลข");
+            }
+            else
+            {
+                missionData.SaveMissionData(nameTextBox.Text, float.Parse(priceTextBox.Text), TargetDate.Value);
+            }
             Hide();
         }
     }
