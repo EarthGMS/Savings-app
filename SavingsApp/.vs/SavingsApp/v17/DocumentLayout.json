@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "D:\\github repo\\Savings-app\\SavingsApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|D:\\github repo\\Savings-app\\SavingsApp\\savingsapp\\forms\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|d:\\github repo\\savings-app\\savingsapp\\savingsapp\\forms\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C68DD00-13E2-42FC-8CCF-B2ADDA63AD80}|SavingsApp\\SavingsApp.csproj|solutionrelative:savingsapp\\forms\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -95,8 +95,7 @@
               "ViewState": "AgIAAA4AAAAAAAAAAAAowC4AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T05:16:27.406Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -108,8 +107,7 @@
               "RelativeToolTip": "SavingsApp\\Forms\\addMission.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T01:38:40.635Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -122,8 +120,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-05-07T07:31:21.238Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -148,8 +145,7 @@
               "RelativeToolTip": "SavingsApp\\Codes\\TransactionData.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAswB4AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T07:09:30.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-19T07:09:30.068Z"
             },
             {
               "$type": "Document",
@@ -161,8 +157,7 @@
               "RelativeToolTip": "SavingsApp\\bin\\Debug\\MoneyData.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-07T06:52:42.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T06:52:42.513Z"
             },
             {
               "$type": "Document",
@@ -174,8 +169,7 @@
               "RelativeToolTip": "SavingsApp\\bin\\Debug\\AnalysisData.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-07T06:51:52.375Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T06:51:52.375Z"
             },
             {
               "$type": "Document",
@@ -187,8 +181,7 @@
               "RelativeToolTip": "SavingsApp\\Forms\\Mission.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAnwA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T07:21:56.739Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T07:21:56.739Z"
             },
             {
               "$type": "Document",
@@ -200,8 +193,7 @@
               "RelativeToolTip": "SavingsApp\\bin\\Debug\\TransactionData.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-09T03:41:32.703Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T03:41:32.703Z"
             },
             {
               "$type": "Document",
@@ -212,8 +204,7 @@
               "ToolTip": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\MainScreen.cs [Design]",
               "RelativeToolTip": "SavingsApp\\Forms\\MainScreen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T10:35:06.465Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-19T10:35:06.465Z"
             },
             {
               "$type": "Document",
@@ -224,8 +215,7 @@
               "ToolTip": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\TransactionForm.cs [Design]",
               "RelativeToolTip": "SavingsApp\\Forms\\TransactionForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T09:35:40.527Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-07T09:35:40.527Z"
             },
             {
               "$type": "Document",
@@ -237,8 +227,7 @@
               "RelativeToolTip": "SavingsApp\\Codes\\Account_Data.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAuwBoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T14:48:22.245Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T14:48:22.245Z"
             },
             {
               "$type": "Document",
@@ -250,8 +239,7 @@
               "RelativeToolTip": "SavingsApp\\Codes\\MissionData.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAiwB0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T10:23:37.468Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-19T10:23:37.468Z"
             },
             {
               "$type": "Document",
@@ -263,8 +251,7 @@
               "RelativeToolTip": "SavingsApp\\Codes\\SaveMoneyInfo.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAA4wBAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T07:44:14.48Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-26T07:44:14.48Z"
             },
             {
               "$type": "Document",
@@ -276,8 +263,7 @@
               "RelativeToolTip": "SavingsApp\\Codes\\SaveInfo.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAYwDgAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T07:10:07.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-19T07:10:07.269Z"
             },
             {
               "$type": "Document",
@@ -289,8 +275,7 @@
               "RelativeToolTip": "SavingsApp\\Codes\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T06:42:54.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T06:42:54.538Z"
             },
             {
               "$type": "Document",
@@ -301,8 +286,7 @@
               "ToolTip": "D:\\github repo\\Savings-app\\SavingsApp\\SavingsApp\\Forms\\Mission.cs [Design]",
               "RelativeToolTip": "SavingsApp\\Forms\\Mission.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T10:36:00Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-19T10:36:00Z"
             },
             {
               "$type": "Document",
@@ -314,8 +298,7 @@
               "RelativeToolTip": "SavingsApp\\Forms\\addMission.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAUwB8AAABwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T10:22:37.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-19T10:22:37.602Z"
             }
           ]
         }
