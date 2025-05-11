@@ -314,8 +314,8 @@
             // transactionGridView
             // 
             this.transactionGridView.AllowUserToAddRows = false;
-            this.transactionGridView.AllowUserToDeleteRows = false;
-            this.transactionGridView.AllowUserToOrderColumns = true;
+            this.transactionGridView.AllowUserToResizeColumns = false;
+            this.transactionGridView.AllowUserToResizeRows = false;
             this.transactionGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.transactionGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.TransactionName,

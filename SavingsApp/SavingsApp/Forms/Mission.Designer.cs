@@ -55,6 +55,8 @@
             // MissionDataGridBox
             // 
             this.MissionDataGridBox.AllowUserToAddRows = false;
+            this.MissionDataGridBox.AllowUserToResizeColumns = false;
+            this.MissionDataGridBox.AllowUserToResizeRows = false;
             this.MissionDataGridBox.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.MissionDataGridBox.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MissionName,
@@ -94,28 +96,28 @@
             // 
             this.MissionName.HeaderText = "ชื่อ";
             this.MissionName.Name = "MissionName";
-            this.MissionName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.MissionName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.MissionName.Width = 230;
             // 
             // MissionValue
             // 
             this.MissionValue.HeaderText = "จำนวนเงิน";
             this.MissionValue.Name = "MissionValue";
-            this.MissionValue.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.MissionValue.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.MissionValue.Width = 150;
             // 
             // Day
             // 
             this.Day.HeaderText = "วัน";
             this.Day.Name = "Day";
-            this.Day.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Day.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Day.Width = 50;
             // 
             // FinishMission
             // 
             this.FinishMission.HeaderText = "เสร็จสิ้น";
             this.FinishMission.Name = "FinishMission";
-            this.FinishMission.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.FinishMission.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.FinishMission.Text = "เสร็จสิ้น";
             this.FinishMission.UseColumnTextForButtonValue = true;
             // 
